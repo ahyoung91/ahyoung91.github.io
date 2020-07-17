@@ -9,11 +9,6 @@
 *.spec
 
 # Jekyll dev or build files
-_development_tool/*
-.sass-cache/*
-*.css.map
-*.scssc
-.bundle/*
 
 # Theme Gem files
 Gemfile.lock
