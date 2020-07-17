@@ -1,4 +1,1042 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-17T14:45:13+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Type on Strap</title><subtitle>A website with blog posts and pages</subtitle><entry><title type="html">Sample post</title><link href="http://localhost:4000/blog/2019-06-30-sample-post" rel="alternate" type="text/html" title="Sample post" /><published>2019-06-30T00:00:00+09:00</published><updated>2019-06-30T00:00:00+09:00</updated><id>http://localhost:4000/blog/sample-post</id><content type="html" xml:base="http://localhost:4000/blog/2019-06-30-sample-post">&lt;p&gt;Consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-07-17T17:58:50+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">AY Portfolio</title><subtitle></subtitle><entry><title type="html">웹폰트</title><link href="http://localhost:4000/blog/2020-03-21-webfont" rel="alternate" type="text/html" title="웹폰트" /><published>2020-03-21T00:00:00+09:00</published><updated>2020-03-21T00:00:00+09:00</updated><id>http://localhost:4000/blog/webfont</id><content type="html" xml:base="http://localhost:4000/blog/2020-03-21-webfont">&lt;h2 id=&quot;웹폰트란&quot;&gt;웹폰트란?&lt;/h2&gt;
+&lt;p&gt;사용자의 로컬에 &lt;strong&gt;폰트 설치 여부와 상관 없이&lt;/strong&gt;
+폰트 파일을 다운로드 하여 브라우저에 표시해주는 웹 전용 폰트이다.&lt;/p&gt;
+
+&lt;h2 id=&quot;font-face-속성&quot;&gt;@font-face 속성&lt;/h2&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;@font-face&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NanumSquareWeb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NanumSquareR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+       &lt;span class=&quot;n&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NanumSquare&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+       &lt;span class=&quot;sx&quot;&gt;url(NanumSquareR.eot?#iefix)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'embedded-opentype'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+       &lt;span class=&quot;sx&quot;&gt;url(NanumSquareR.woff)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'woff'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+       &lt;span class=&quot;sx&quot;&gt;url(NanumSquareR.ttf)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'truetype'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;py&quot;&gt;unicode-range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;U&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0-10&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;FFFF&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;h1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NanumSquareWeb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sans-serif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;웹 폰트를 사용하려고 &lt;strong&gt;@font-face&lt;/strong&gt; 를 적용한 코드이다. @font-face에는 font-family, src, font-style, font-weight, unicode-range 속성을 사용할 수 있다.&lt;/p&gt;
+
+&lt;h3 id=&quot;1-font-family&quot;&gt;1. font-family&lt;/h3&gt;
+
+&lt;p&gt;font-family는 CSS에서 사용할 웹폰트 패밀리명이다.
+아래 코드는 내가 사용할 웹폰트 패밀리명을 &lt;strong&gt;NanumSquareWeb&lt;/strong&gt; 으로 하겠다. 라고 선언한 예제이다.&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;@font-face&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NanumSquareWeb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url(NanumSquareR.woff)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'woff'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;font-family에서 선언한 웹폰트 패밀리명과 사용할 웹폰트 명이 같을 필요는 없다.&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;@font-face&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;'아무폰트명'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url(NanumSquareR.woff)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'woff'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;위의 코드처럼 웹폰트 패밀리명을 ‘아무폰트명’으로 정하고 나눔스퀘어 폰트를 사용해도 상관없다.
+하지만, &lt;strong&gt;유지보수를 위해&lt;/strong&gt; 웹폰트 패밀리명과 사용할 폰트명을 동일하게 하는것이 좋다.&lt;/p&gt;
+
+&lt;p&gt;**참고로 &lt;strong&gt;IE 11 이하&lt;/strong&gt; 에서는 font-family에 선언한 웹폰트 패밀리명이 &lt;strong&gt;31자 이상&lt;/strong&gt; 이 되면 적용되지 않는다.&lt;/p&gt;
+
+&lt;h3 id=&quot;2-src&quot;&gt;2. src&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;local()&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;로컬에 이미 설치 된 폰트의 경로를 적는 속성&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;url()&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;다운로드 할 웹폰트의 주소를 적는 속성&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;두 속성 모두 , 를 사용하여 여러번 중첩해서 사용할 수 있다.&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;@font-face&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NanumSquareWeb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NanumSquareR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* 첫번째 */&lt;/span&gt;
+       &lt;span class=&quot;n&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NanumSquare&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* 두번째 */&lt;/span&gt;
+       &lt;span class=&quot;sx&quot;&gt;url(NanumSquareR.eot)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* 세번째 */&lt;/span&gt;
+       &lt;span class=&quot;sx&quot;&gt;url(NanumSquareR.woff)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* 네번째 */&lt;/span&gt;
+       &lt;span class=&quot;sx&quot;&gt;url(NanumSquareR.ttf)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* 다섯번째 */&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;브라우저는&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;NanumSquareR&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;→&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;NanumSquare&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;→&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;NanumSquareR&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.eot&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;→&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;NanumSquareR&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.woff&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;→&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;NanumSquareR&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.ttf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;위의 순서대로 폰트를 찾는다.&lt;/p&gt;
+
+&lt;p&gt;만약 나눔스퀘어 폰트가 &lt;strong&gt;설치되지 않은&lt;/strong&gt; 사용자가 &lt;strong&gt;크롬브라우저&lt;/strong&gt; 를 통해 접속하면&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;NanumSquareR&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;→&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;NanumSquare&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;→&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;NanumSquareR&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.eot&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;→&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;NanumSquareR&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;.woff&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;위 순서대로 폰트를 찾다가 &lt;strong&gt;NanumSquareR.woff&lt;/strong&gt; 파일이 적용된다. 그 이유는 크롬브라우저는 &lt;strong&gt;.eot&lt;/strong&gt; 파일을 지원하지 않기 때문이다.
+&lt;strong&gt;즉, 불필요한 다운로드&lt;/strong&gt; 가 일어나게 된다.&lt;/p&gt;
+
+&lt;p&gt;불필요한 다운로드를 막기 위해 &lt;strong&gt;format속성&lt;/strong&gt; 을 사용한다.&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;@font-face&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NanumSquareWeb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NanumSquareR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* 첫번째 */&lt;/span&gt;
+       &lt;span class=&quot;n&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;NanumSquare&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* 두번째 */&lt;/span&gt;
+       &lt;span class=&quot;sx&quot;&gt;url(NanumSquareR.eot)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'embedded-opentype'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+       &lt;span class=&quot;sx&quot;&gt;url(NanumSquareR.woff)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'woff'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* 세번째 */&lt;/span&gt;
+       &lt;span class=&quot;sx&quot;&gt;url(NanumSquareR.ttf)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'truetype'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* 네번째 */&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;format속성&lt;/strong&gt; 을 사용하면 브라우저에서 지원 가능한 파일만 다운로드 받기 때문에 속도가 빨라진다.&lt;/p&gt;
+
+&lt;p&gt;**참고로 &lt;strong&gt;IE 8 이하&lt;/strong&gt; 에서는 local()을 인식하지 못한다. 사용하지 않는것이 좋다.&lt;/p&gt;
+
+&lt;h3 id=&quot;3-font-weight-font-style&quot;&gt;3. font-weight, font-style&lt;/h3&gt;
+
+&lt;p&gt;폰트 패밀리명을 하나로 하고, 여러개의 스타일을 표현하고자 할 때 사용한다.&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;@font-face&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NanumSquareWeb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url(NanumSquareL.woff)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'woff'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;300&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@font-face&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NanumSquareWeb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url(NanumSquareR.woff)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'woff'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;400&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@font-face&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NanumSquareWeb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url(NanumSquareB.woff)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'woff'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;700&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@font-face&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NanumSquareWeb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url(NanumSquareEB.woff)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'woff'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;800&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;4-unicode-range&quot;&gt;4. unicode-range&lt;/h3&gt;
+
+&lt;p&gt;유니코드로 지정한 글자에만 웹 폰트를 적용하는 속성이다.&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    
+    &lt;div style=&quot;flex: 100.0%&quot;&gt;
+        &lt;img class=&quot;single&quot; src=&quot;/assets/img/pexels/posts/webfont_img1.png&quot; alt=&quot;webfont_img1.png&quot; /&gt;
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;@font-face&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NanumSquareWeb&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url(NanumSquareL.woff)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'woff'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;py&quot;&gt;unicode-range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;U&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;BC14&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;U&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CC28&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;위 코드에서 &lt;strong&gt;U+BC14&lt;/strong&gt; 는 글자 ‘바’에 해당하는 유니코드고, &lt;strong&gt;U+CC28&lt;/strong&gt; 는 글자 ‘차’에 해당하는 유니코드다. 전체 텍스트에서 unicode-range 속성에 유니코드로 등록된 글자인 &lt;strong&gt;‘바’와 ‘차’&lt;/strong&gt; 에만 웹 폰트가 적용되었다.&lt;/p&gt;
+
+&lt;p&gt;unicode-range 속성의 장점은 등록된 글자가 텍스트에 없으면 웹 폰트 다운로드를 요청하지 않는다는 것이다. 즉, 웹 폰트를 사용하지 않으면 불필요한 다운로드를 막을 수 있다.&lt;/p&gt;
+
+&lt;h2 id=&quot;브라우저별-font-format&quot;&gt;브라우저별 Font-format&lt;/h2&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    
+    &lt;div style=&quot;flex: 100.0%&quot;&gt;
+        &lt;img class=&quot;single&quot; src=&quot;/assets/img/pexels/posts/webfont_img2.png&quot; alt=&quot;webfont_img2.png&quot; /&gt;
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;EOT&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;IE 6~8 사용 가능&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;WOFF&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;모든 브라우저에서 사용 가능&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;WOFF2&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;IE를 제외한 모든 브라우저에서 사용 가능&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;@font-face&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NanumSquare&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url(NanumSquareR.eot)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* IE 호환성 보기 */&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url(NanumSquareR.eot#iefix)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'embedded-opentype'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* IE 6 ~ 8 */&lt;/span&gt;
+       &lt;span class=&quot;sx&quot;&gt;url(NanumSquareR.woff2)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'woff2'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* WOFF2 지원 브라우저 */&lt;/span&gt;
+       &lt;span class=&quot;sx&quot;&gt;url(NanumSquareR.woff)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'woff'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* 모던 브라우저 */&lt;/span&gt;
+       &lt;span class=&quot;sx&quot;&gt;url(NanumSquareR.ttf)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'truetype'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;위와 같이 작성할 수 있겠다. 어떻게 다운로드가 이루어지는지 살펴보자.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;IE 6~8&lt;/strong&gt; 로 접근하면 NanumSquareR.eot? 가 다운로드 된다.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;IE 호환성 보기&lt;/strong&gt; 로 접근하면 NanumSquareR.eot 가 다운로드 된다.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;IE 9이상&lt;/strong&gt; 으로 접근하면 NanumSquareR.eot? 가 다운로드 된다.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Safari&lt;/strong&gt; 로 접근할 때는 NanumSquareR.woff가 다운로드 된다.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Chrome, firefox, opera&lt;/strong&gt; 로 접근할 때는 NanumSquareR.woff2가 다운로드 된다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;하위브라우저 대응이 필요없다면 아래코드와 같이 작성하면 최적화에 도움이 된다.&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;@font-face&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NanumSquare&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url(NanumSquareR.woff2)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'woff2'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+       &lt;span class=&quot;sx&quot;&gt;url(NanumSquareR.woff)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'woff'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+       &lt;span class=&quot;sx&quot;&gt;url(NanumSquareR.ttf)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;'truetype'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;fout--foit--foft&quot;&gt;FOUT / FOIT / FOFT&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-foutflash-of-unstyled-text&quot;&gt;1. FOUT(Flash of Unstyled Text)&lt;/h3&gt;
+
+&lt;p&gt;웹폰트 파일이 로드되기 전까지 기본폰트가 노출되다가 웹폰트 로드가 완료되면 웹폰트로 바뀌면서 깜빡이는 현상이다.
+&lt;strong&gt;IE 브라우저&lt;/strong&gt; 에서 발생한다.&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    
+    &lt;div style=&quot;flex: 100.0%&quot;&gt;
+        &lt;img class=&quot;single&quot; src=&quot;/assets/img/pexels/posts/webfont_img3.gif&quot; alt=&quot;webfont_img3.gif&quot; /&gt;
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;h3 id=&quot;2-foitflash-of-invisible-text&quot;&gt;2. FOIT(Flash of Invisible Text)&lt;/h3&gt;
+
+&lt;p&gt;웹폰트 파일이 로드되기 전까지 웹 페이지를 로드하지 않고 웹폰트가 로드되면 웹페이지를 로드하기 때문에 로드가 완료되기 전까지 텍스트가 안보이는 현상이다. &lt;strong&gt;IE를 제외한 Chrome, Safari&lt;/strong&gt; 등에서 발생한다.&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    
+    &lt;div style=&quot;flex: 100.0%&quot;&gt;
+        &lt;img class=&quot;single&quot; src=&quot;/assets/img/pexels/posts/webfont_img4.gif&quot; alt=&quot;webfont_img4.gif&quot; /&gt;
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;h3 id=&quot;3-foftflash-of-faux-text&quot;&gt;3. FOFT(Flash of Faux Text)&lt;/h3&gt;
+
+&lt;p&gt;웹폰트 파일에 font-weight, font-style과 관련된 폰트가 있을 시 로드 전 브라우저에서 임시로 폰트의 굵기와 스타일을 생성하여 노출하고 웹폰트 로드가 완료되면 웹폰트로 바뀌는 현상이다. 이는 스크립트로 만들어진 현상으로 시스템글꼴 → 웹 폰트 Regular → 웹 폰트 Bold 순으로 바뀐다.&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    
+    &lt;div style=&quot;flex: 100.0%&quot;&gt;
+        &lt;img class=&quot;single&quot; src=&quot;/assets/img/pexels/posts/webfont_img5.gif&quot; alt=&quot;webfont_img5.gif&quot; /&gt;
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;FOFT라는 현상을 스크립트로 만든 이유는 웹폰트의 종류가 많을 경우 첫 폰트를 빠르게 보여주기 위해서이다.&lt;/p&gt;
+
+&lt;p&gt;FOUT와 FOIT는 나눔스퀘어 Regular와 나눔스퀘어 Bold 웹폰트를 사용할 때 두 웹폰트를 동시에 다운로드 하게 된다.
+두 폰트가 동시에 다운로드 되기 때문에 다운로드가 완료되어 웹폰트 적용 시점은 다운로드 완료 이후이다.&lt;/p&gt;
+
+&lt;p&gt;하지만 FOFT는 나눔스퀘어 Regular와 나눔스퀘어 Bold 웹폰트를 사용할 때 나눔스퀘어 Regular 먼저 다운로드 하고 Bold를 다운로드 한다.&lt;/p&gt;
+
+&lt;p&gt;그래서 나눔스퀘어 Regular가 다운로드가 완료되어 먼저 적용되고 Bold는 이후에 적용된다.&lt;/p&gt;
+
+&lt;h2 id=&quot;해결방법&quot;&gt;해결방법&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-css의-font-display-속성&quot;&gt;1. CSS의 font-display 속성&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;auto&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;브라우저의 기본동작에 맡기는 방식이다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;block&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;FOIT와 동일하게 작용하는 속성이다. 웹 폰트가 로딩되지 않았을 때 텍스트를 렌더링 하지 않는다.(최대 3초) 웹폰트 로딩이 완료되면 웹폰트를 적용한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;swap&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;FOUT와 동일하게 작용하는 속성이다. 응답이 올 때까지 무한정 기다리고 그 전까진 바로 기본폰트를 보여준다. 꼭 적용해야만 하는 중요폰트일 경우에 쓸 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;fallback&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;우선 100ms동안 텍스트가 보이지 않고 그 후 폴백 폰트로 렌더링한다. 특이한 점은 2초의 전환(swap) 시간이 있다는 점이다. 이 시간 안에 로딩이 완료되면 웹 폰트로 전환한다. 하지만 이 시간이 지나면 웹폰트 다운로드가 완료되어도 웹폰트로 전환하지 않고 폴백 폰트를 유지한다. 전환 시간 이후 다운로드 된 웹폰트는 웹페이지에 적용되지는 않지만 캐시에는 저장된다. 즉, 추후에 사용자가 다시 방문했을 때 바로 웹폰트가 적용된다는 장점이 있다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;optional&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;optional 옵션은 fallback 옵션과 비슷하지만 다르게 작동하는 옵션이다. 우선 100ms 동안 텍스트가 보이지 않고 그 후 폴백 폰트로 전환한다. 웹 폰트를 다운로드하지만 브라우저가 네트워크 상태를 파악해 웹 폰트 전환 여부를 결정한다는 점이 이 옵션의 특이한 점이다. 예를 들어 네트워크의 연결 상태가 안 좋으면 웹 폰트의 다운로드가 완료되어도 캐시에 저장만 하고 전환은 하지 않는다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    
+    &lt;div style=&quot;flex: 100.0%&quot;&gt;
+        &lt;img class=&quot;single&quot; src=&quot;/assets/img/pexels/posts/webfont_img3.png&quot; alt=&quot;webfont_img3.png&quot; /&gt;
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;IE와 edge를 빼고는 모두 지원하므로 텍스트가 보이지 않는 문제가 발생하는 브라우저에서는 문제없이 사용할 수 있다.
+하지만 여기에도 문제는 있다. 의도적으로 텍스트가 보이지 않는 문제는 해결했지만 그로인해 FOFT현상이 나타나 레이아웃이 깨진 듯한 화면이 나타나게 된다.&lt;/p&gt;
+
+&lt;h3 id=&quot;2-google-webfont-loader&quot;&gt;2. Google Webfont Loader&lt;/h3&gt;
+
+&lt;p&gt;그럴때엔 구글에서 제공하는 Google Webfont Loader를 사용하면 해결할 수 있다.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;//ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;WebFont&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;load&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;custom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;families&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;NanumSquare&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// @font-face에 선언한 폰트 패밀리명&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;urls&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;../css/NanumSquare.css&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// @font-face가 선언된 css 경로&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;위의 스크립트를 적용하면 해당 웹 폰트를 추적하면서 자동으로 html에 아래의 클래스가 적용된다.&lt;/p&gt;
+
+&lt;p&gt;폰트 패밀리는 &lt;strong&gt;@font-face에서 선언한 폰트 패밀리명&lt;/strong&gt;, 스타일 굵기는 &lt;strong&gt;알파벳 n에 @font-face에서 선언한 font-weight의 백의자리 수를 합친 값&lt;/strong&gt; 이다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;wf-loading: 1개 이상 폰트가 로딩 중&lt;/li&gt;
+  &lt;li&gt;wf-active: 1개 이상 폰트 사용 가능&lt;/li&gt;
+  &lt;li&gt;wf-inactive: 모든 폰트 사용 불가능&lt;/li&gt;
+  &lt;li&gt;wf-폰트패밀리-스타일굵기-loading: 특정 폰트 로딩 중&lt;/li&gt;
+  &lt;li&gt;wf-폰트패밀리-스타일굵기-active: 특정 폰트 사용 가능&lt;/li&gt;
+  &lt;li&gt;wf-폰트패밀리-스타일굵기-inactive: 특정 폰트 사용 불가능&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;FOUT&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;/* 웹 폰트 사용 가능할 때 속성 적용 */&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.wf-nanumsquare-n4-active&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#fonts_loaded&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+  &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NanumSquare&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sans-serif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;FOIT&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;/* 웹 폰트 다운로드 전에는 화면을 보여주지 않음 */&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;#fonts-loaded&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+  &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;/* 웹 폰트 사용이 가능하면 화면을 보여주고 웹 폰트 속성 적용 */&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.wf-nanumsquare-n4-active&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#fonts_loaded&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+  &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NanumSquare&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sans-serif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;FOFT&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;/* 나눔스퀘어 Regular 폰트가 사용 가능할 때 웹 폰트 속성 적용 */&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.wf-nanumsquareregular-n4-active&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#fonts_loaded&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+  &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NanumSquare-Regular&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sans-serif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;/* 나눔스퀘어 Bold 폰트가 사용 가능할 때 웹 폰트 속성 적용 */&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.wf-nanumsquarebold-n4-active&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;#fonts_loaded&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+  &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;NanumSquare-Bold&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sans-serif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;스크립트&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;WebFont&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;load&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;custom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;families&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;NanumSquare-Regular&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;NanumSquare-Bold&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;urls&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;../css/NanumSquare.css&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;4-preload&quot;&gt;4. preload&lt;/h3&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;preload&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;../webfont/NanumSquare/NanumSquare.woff&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;as=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;font&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;crossorigin&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;preload를 이용해서 폰트를 받으면 다른 어떤 것보다 먼저 리소스를 요청한다. 화면에 꼭 필수적인 폰트를 로딩해야 할 때 사용하면 좋다.
+as와 crossorigin이 있어야 두 번 다운로드하지 않는다.&lt;/p&gt;
+
+&lt;p&gt;FOUT와 FOIT가 없어지지만, &lt;strong&gt;그만큼 렌더링이 느려진다.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    
+    &lt;div style=&quot;flex: 100.0%&quot;&gt;
+        &lt;img class=&quot;single&quot; src=&quot;/assets/img/pexels/posts/webfont_img4.png&quot; alt=&quot;webfont_img4.png&quot; /&gt;
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;preload 옵션은 아직 Chrome과 Safari만 지원하고 IE와 Edge, Firefox는 지원하지 않는다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;참고사이트&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://wit.nts-corp.com/2017/02/13/4258&quot; target=&quot;_blank&quot;&gt;웹폰트 사용하기&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://d2.naver.com/helloworld/4969726&quot; target=&quot;_blank&quot;&gt;naverD2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://velog.io/@vnthf/%EC%9B%B9%ED%8F%B0%ED%8A%B8-%EC%B5%9C%EC%A0%81%ED%99%94-%ED%95%98%EA%B8%B0&quot; target=&quot;_blank&quot;&gt;웹폰트 최적화하기&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="웹폰트" /><category term="웹폰트 최적화" /><summary type="html">웹폰트란? 사용자의 로컬에 폰트 설치 여부와 상관 없이 폰트 파일을 다운로드 하여 브라우저에 표시해주는 웹 전용 폰트이다.</summary></entry><entry><title type="html">SASS</title><link href="http://localhost:4000/blog/2020-01-21-sass" rel="alternate" type="text/html" title="SASS" /><published>2020-01-21T00:00:00+09:00</published><updated>2020-01-21T00:00:00+09:00</updated><id>http://localhost:4000/blog/sass</id><content type="html" xml:base="http://localhost:4000/blog/2020-01-21-sass">&lt;p&gt;SASS는 css를 만들어주는 언어로 자바스크립트처럼 특정 속성(ex. color, margin, width 등)의 값을 변수로 선언하여 필요한 곳에 선언된 변수를 적용할 수도 있고, 반복되는 코드를 한번의 선언으로 여러곳에 재사용할 수 있도록 하는 전처리기이다.&lt;/p&gt;
+
+&lt;p&gt;왜 css가 아닌 sass를 사용하는가? 라는 의문을 가질 수 있다.
+하드 코딩을 하다보면 사실 html 마크업 보다는 css를 작성하는데 훨씬 더 많은 시간을 할애한다.
+모든 레이아웃을 css로 제어해야 하기 때문이다.
+그러다보면 여러번 반복되는 속성들을 사용하기도 하고, 다른 곳에서 작성했던 속성을 다시 또 작성하는 등 번거로운 일들이 발생한다.
+그럴때에 
+&lt;strong&gt;scss를 사용하면 생산적인 코드를 작성&lt;/strong&gt;
+할 수 있다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;실제-프로젝트에-사용-된-sass&quot;&gt;실제 프로젝트에 사용 된 SASS&lt;/h2&gt;
+
+&lt;h3 id=&quot;mixin-include&quot;&gt;@mixin, @include&lt;/h3&gt;
+&lt;p&gt;실제 m.talk에서 사용된 코드이다.
+자주 쓰는 속성(한줄 말줄임, 2,3줄 이상의 멀티 말줄임 등)을 
+&lt;strong&gt;@mixin으로 정의한 뒤 @include&lt;/strong&gt;
+로 불러내어 사용할 수 있다.
+아래 코드를 보면 이해가 쉽게 될 것이다.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;Input&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;wwwWWWWWWWWwwwwwwwwwwwwwwww&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/p&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;mixin&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ellipsis&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;overflow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hidden&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;overflow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ellipsis&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;white&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;space&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;nowrap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;mixin&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ellipsisMulti&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$line_num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;webkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;overflow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hidden&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;overflow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ellipsis&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;wrap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;webkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;clamp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$line_num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;webkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;orient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;vertical&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;test&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ellipsisMulti&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;18&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;18&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;Output&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;test&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;webkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;overflow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;hidden&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;overflow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ellipsis&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;wrap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;webkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;clamp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;webkit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;orient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;vertical&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;max&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;18&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;18&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;변수설정&quot;&gt;변수설정&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;자주 사용되는 컬러&lt;/strong&gt;
+나, &lt;strong&gt;텍스트를 변수로 설정&lt;/strong&gt;
+해두면 유지보수에 용이하다. 실제 네이버 파트너센터에 사용 된 코드이다.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;Input&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;자주&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;쓰이는&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;컬러를&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;변수로&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;설정해줌&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/div&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;$point_blue&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;43&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a0fa&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 사용처 : lnb&lt;/span&gt;
+&lt;span class=&quot;nl&quot;&gt;$point_green&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;02&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b336&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nl&quot;&gt;$point_lightgreen&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;abe16&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nl&quot;&gt;$point_lightgreen2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;00&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;c73c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nl&quot;&gt;$point_red&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fc4c4e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nl&quot;&gt;$main_black&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;181&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;b1e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 주로 페이지 타이틀 쪽에서 사용하는 블랙&lt;/span&gt;
+&lt;span class=&quot;nl&quot;&gt;$black&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e4146&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 본문타이틀 + 본문내용 에서 사용하는 블랙&lt;/span&gt;
+&lt;span class=&quot;nl&quot;&gt;$point_gray&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;80868&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 주로 서브텍스트에서 사용하는 그레이&lt;/span&gt;
+&lt;span class=&quot;nl&quot;&gt;$point_lgray&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;abb3ba&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 주로 placeholder,  미설정텍스트에 사용되는 밝은그레이&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;test&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;$point_blue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;Output&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;test&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;43&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a0fa&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;gulp&quot;&gt;Gulp&lt;/h3&gt;
+
+&lt;p&gt;빌드 자동화 도구인 Gulp를 사용하면 명령어를 통해 보다 쉽게 sass를 사용할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;여러 task들을 정의하고 명령어를 통해 task들을 실행할 수 있다.
+gulpfile.js 파일을 생성하여 아래와 같은 코드를 넣어서 실제 talk,m.talk에서 사용했다.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// ---------------------------------&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Tasks&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// ---------------------------------&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// task.bs&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;bs&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;nx&quot;&gt;browserSync&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;files&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;*.html&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;*.php&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;proxy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;localhost:80&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;external&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+		&lt;span class=&quot;na&quot;&gt;logPrefix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;bs&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+	&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;watch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;src/scss/**/*.scss&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;sass&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+	&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;watch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;src/**/*.html&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;src/css/**/*.css&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;src/**/*.php&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;src/js/**/*.js&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;change&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;browserSync&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reload&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;위 코드를 설명하자면 문서파일을 수정하고 실제 화면을 새로고침 할 필요없이 자동으로 새로고침 될 수 있게 했다.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// ---------------------------------&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Tasks&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// ---------------------------------&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// task.sass&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;sass&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;src/scss/**/*.scss&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sourcemaps&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+		&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+			&lt;span class=&quot;na&quot;&gt;outputStyle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;expanded&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// nested, expanded, compact, compressed&lt;/span&gt;
+			&lt;span class=&quot;na&quot;&gt;indentType&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;tab&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+			&lt;span class=&quot;na&quot;&gt;indentWidth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+		&lt;span class=&quot;p&quot;&gt;}).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;logError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+		&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sourcemaps&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;./&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+		&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;src/css&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+		&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;browserSync&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;stream&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;scss파일을 수정 한 뒤 저장하면 자동으로 컴파일된다.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// ---------------------------------&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Tasks&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// ---------------------------------&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// task.sprite&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;sprite&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;folders&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getFolders&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;img&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sprite&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;nx&quot;&gt;folders&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;folder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;spriteData&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sprite&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;folder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;/*.png&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;cwd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;spritesmith&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+			&lt;span class=&quot;na&quot;&gt;imgPath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;../&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;img&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;sp_&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;folder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;.png&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+			&lt;span class=&quot;na&quot;&gt;imgName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;sp_&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;folder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;.png&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+			&lt;span class=&quot;na&quot;&gt;cssName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;_sp_&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;folder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;.scss&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+			&lt;span class=&quot;na&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+			&lt;span class=&quot;na&quot;&gt;algorithm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;binary-tree&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//top-down, left-right, diagonal, alt-diagonal, binary-tree&lt;/span&gt;
+			&lt;span class=&quot;na&quot;&gt;cssTemplate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;scss&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;lib&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;png_template&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+			&lt;span class=&quot;na&quot;&gt;cssVarMap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;sprite&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+				&lt;span class=&quot;nx&quot;&gt;sprite&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;folder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sprite&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+				&lt;span class=&quot;nx&quot;&gt;sprite&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;origin&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;sp_&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;folder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+			&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+			&lt;span class=&quot;na&quot;&gt;cssSpritesheetName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;sp_&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;folder&lt;/span&gt;
+		&lt;span class=&quot;p&quot;&gt;}));&lt;/span&gt;
+
+		&lt;span class=&quot;nx&quot;&gt;spriteData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;img&lt;/span&gt;
+			&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;buffer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+			&lt;span class=&quot;c1&quot;&gt;// .pipe(tiny())&lt;/span&gt;
+			&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+		&lt;span class=&quot;nx&quot;&gt;spriteData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;css&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;scss&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;lib&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;// ---------------------------------&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Tasks&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// ---------------------------------&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// task.svg_sprite&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;task&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;svg_sprite&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;folders&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getFolders&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;img&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;svg_sprite&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;nx&quot;&gt;folders&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;map&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;folder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;folder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;/*.svg&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;cwd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;img&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;svg_sprite&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+			&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;svgSprite&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+				&lt;span class=&quot;na&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+					&lt;span class=&quot;na&quot;&gt;spacing&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+						&lt;span class=&quot;na&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;
+					&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+				&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+				&lt;span class=&quot;na&quot;&gt;mode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+					&lt;span class=&quot;na&quot;&gt;css&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+						&lt;span class=&quot;na&quot;&gt;render&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+							&lt;span class=&quot;na&quot;&gt;scss&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+								&lt;span class=&quot;na&quot;&gt;template&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;scss&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;lib&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;svg_template&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+								&lt;span class=&quot;na&quot;&gt;dest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;../&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;scss&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;lib&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;_sp_&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;folder&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;.scss&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;
+							&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+						&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;
+						&lt;span class=&quot;na&quot;&gt;mixin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;folder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+						&lt;span class=&quot;na&quot;&gt;dest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;./&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+						&lt;span class=&quot;na&quot;&gt;sprite&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;../img/sp_&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;folder&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+						&lt;span class=&quot;na&quot;&gt;bust&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;
+					&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+				&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+			&lt;span class=&quot;p&quot;&gt;}))&lt;/span&gt;
+			&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pipe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;gulp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;img&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;nx&quot;&gt;Output&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;$chat_file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ico_asf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;116&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;px&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;px&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;116&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;px&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;px&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;106&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;px&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;140&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;px&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;686&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;px&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;440&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;px&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;../img/sp_chat_file.png&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;chat_file-ico_asf&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;sp_chat_file&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;실제&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;사용&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;방법&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;asf&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;include&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sp_chat_file_on&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$chat_file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ico_asf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;웹 사이트 성능 최적화 방법 중 하나인 이미지 스프라이트이다.
+여러장의 이미지를 한장의 png파일로 만들어서 그 이미지를 사용한다.
+페이지에 쓰이는 이미지들을 한 곳에 모아두고 좌표을 적어서 사용한다.&lt;/p&gt;
+
+&lt;p&gt;Gulp task를 사용하지 않으면 이미지를 추가할때마다 좌표값을 일일이 계산해서 입력해줘야 하는 번거로움이 있다.
+그럴 때 아주 유용한 task인데 각각의 이미지 좌표를 해당 변수에 담아 @include로 사용하고 싶은 이미지의 변수를 불러오면 자동으로 해당하는 이미지의 좌표가 적용된다.&lt;/p&gt;</content><author><name></name></author><category term="sass" /><category term="scss" /><category term="gulp" /><summary type="html">SASS는 css를 만들어주는 언어로 자바스크립트처럼 특정 속성(ex. color, margin, width 등)의 값을 변수로 선언하여 필요한 곳에 선언된 변수를 적용할 수도 있고, 반복되는 코드를 한번의 선언으로 여러곳에 재사용할 수 있도록 하는 전처리기이다.</summary></entry><entry><title type="html">Word break</title><link href="http://localhost:4000/blog/2020-01-20-word-break" rel="alternate" type="text/html" title="Word break" /><published>2020-01-20T00:00:00+09:00</published><updated>2020-01-20T00:00:00+09:00</updated><id>http://localhost:4000/blog/word-break</id><content type="html" xml:base="http://localhost:4000/blog/2020-01-20-word-break">&lt;p&gt;작업을 하다보면 가볍게 이해한 속성을 바탕으로 관습적으로 사용하는 속성들이 있다.
+그 중 word-break 속성에 대해 조금 더 명확하게 알고 넘어가는게 좋겠다고 생각했다.
+word-break란 단어의 분리를 어떻게 할 것인지 결정한다.
+중요하게 기억할 큰이슈들은 한 단어의 넓이가 자신을 감싸고 있는 tag의 width보다 클경우에 생긴다는 점이다.
+그리고 여기서 영어와 CJK(Chinese/Japanese/Korean text - 이하 한글로 표현) 는 word-break의 적용이 다른 value가 있다는 점이다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;word-break-normal&quot;&gt;word-break: normal;&lt;/h2&gt;
+
+&lt;p&gt;한글은 tag의 width 크기보다 넓은 한개의 단어일경우에도 글자 단위로 줄바꿈해준다.
+하지만 영어의 경우에는 넘쳐서 디자인이 깨지는 형태로 표현된다.&lt;/p&gt;
+
+&lt;h2 id=&quot;word-break-break-word&quot;&gt;word-break: break-word;&lt;/h2&gt;
+
+&lt;p&gt;영어에는 잘 적용이되어 단어별로 줄바꿈이 된다. 하지만 한글에는 실제적으로 normal로 적용이 된다. 그리하여 글자 단위로 줄바꿈이 된다. 그리하여 넘치는 이슈가 생길일은 없지만 한글의 경우 단어별로 끊어주지 않게되어 이쁘지 않게 표현된다.&lt;/p&gt;
+
+&lt;h2 id=&quot;word-break-keep-all&quot;&gt;word-break: keep-all;&lt;/h2&gt;
+
+&lt;p&gt;한글과 영어 모두 길이가 긴 단어의 경우 container를 넘치게 되고 줄바꿈되지 않는다. 디자인을 깨뜨리는 이슈를 발생시키게 된다.&lt;/p&gt;
+
+&lt;h2 id=&quot;결론&quot;&gt;결론&lt;/h2&gt;
+&lt;iframe height=&quot;265&quot; style=&quot;width: 100%;&quot; scrolling=&quot;no&quot; title=&quot;MWYxZmQ&quot; src=&quot;https://codepen.io/ahyoung/embed/MWYxZmQ?height=265&amp;amp;theme-id=default&amp;amp;default-tab=css,result&quot; frameborder=&quot;no&quot; allowtransparency=&quot;true&quot; allowfullscreen=&quot;true&quot;&gt;
+    See the Pen &lt;a href=&quot;https://codepen.io/ahyoung/pen/MWYxZmQ&quot;&gt;MWYxZmQ&lt;/a&gt; by ahyoung
+    (&lt;a href=&quot;https://codepen.io/ahyoung&quot;&gt;@ahyoung&lt;/a&gt;) on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.
+&lt;/iframe&gt;
+
+&lt;p&gt;위의 코드펜에서 주석을 풀면서 해당 속성을 확인해보자.&lt;/p&gt;
+
+&lt;p&gt;word-break와 같은 텍스트에 관한 기본값이 보통 inherit으로 설정되어 있다. 그래서 상위태그에 속성을 주면 상속이 된다.&lt;/p&gt;
+
+&lt;p&gt;body정도에 word-break: break-word; 를 주어 영어는 단어별로 줄바꿈될테고, 한글인경우 필요한부분에 keep-all 을 따로 줄수있겠다.&lt;/p&gt;
+
+&lt;p&gt;한글 문장이 대부분인 사이트여서 word-break속성을 반복적으로 주기싫다면, word-break: keep-all;을 body에 주고 한단어가 넘치는 이슈가 발생하는 곳에 word-break; 를 각각 줄수있겠다.&lt;/p&gt;</content><author><name></name></author><category term="word-break" /><category term="normal" /><category term="break-word" /><category term="keep-all" /><summary type="html">작업을 하다보면 가볍게 이해한 속성을 바탕으로 관습적으로 사용하는 속성들이 있다. 그 중 word-break 속성에 대해 조금 더 명확하게 알고 넘어가는게 좋겠다고 생각했다. word-break란 단어의 분리를 어떻게 할 것인지 결정한다. 중요하게 기억할 큰이슈들은 한 단어의 넓이가 자신을 감싸고 있는 tag의 width보다 클경우에 생긴다는 점이다. 그리고 여기서 영어와 CJK(Chinese/Japanese/Korean text - 이하 한글로 표현) 는 word-break의 적용이 다른 value가 있다는 점이다.</summary></entry><entry><title type="html">Position</title><link href="http://localhost:4000/blog/2020-01-15-position" rel="alternate" type="text/html" title="Position" /><published>2020-01-15T00:00:00+09:00</published><updated>2020-01-15T00:00:00+09:00</updated><id>http://localhost:4000/blog/position</id><content type="html" xml:base="http://localhost:4000/blog/2020-01-15-position">&lt;p&gt;태그들의 기본 position 은 static 으로 없다고 생각해도 무관하겠다.&lt;/p&gt;
+
+&lt;p&gt;어떠한 대상에게 position을 준다면(por,poa,pof 어떤거라도 무관) position 이 갖는 특성을 갖게 되는것이다.
+그 특성 left,right,top,bottom,z-index 5가지이다. 즉, 좌표 값이 생긴다고 생각하면 된다.
+left,right는 x축, top,bottom은 y축, z-index는 z축을 말하겠으며, 즉 position이 주어진단것은 z축이 생기므로 높낮이를 평가할수 있는것이다.
+position 이 없다면 위와같은 속성또한 css에 준다하여도 반영되지 않는다. inline 요소에게 width,height 를 주어도 반영되지 않는것고 같다고 생각하면되겠다.
+각 position의 종류에따라 다른 기준에 의하여 좌표값들이 반영된다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;position-relative&quot;&gt;position: relative;&lt;/h2&gt;
+
+&lt;p&gt;position: relative 객체는 &lt;strong&gt;자기 자신&lt;/strong&gt; 기준으로 top,left,right,bottom 을 이용하여 이동가능하다.&lt;/p&gt;
+
+&lt;h2 id=&quot;position-absolute&quot;&gt;position: absolute;&lt;/h2&gt;
+&lt;p&gt;position: absolute 포지션을 갖은 &lt;strong&gt;가장 가까운 부모&lt;/strong&gt;기준으로 top,left,right,bottom 을 이용하여 이동가능하다.&lt;/p&gt;
+
+&lt;h2 id=&quot;position-fixed&quot;&gt;position: fixed;&lt;/h2&gt;
+&lt;p&gt;position: fixed 윈도우 즉, &lt;strong&gt;화면&lt;/strong&gt; 기준으로 top,left,right,bottom 을 이용하여 이동가능하다.&lt;/p&gt;</content><author><name></name></author><category term="display" /><category term="positon" /><category term="static" /><category term="relative" /><category term="absolute" /><category term="fixed" /><summary type="html">태그들의 기본 position 은 static 으로 없다고 생각해도 무관하겠다.</summary></entry><entry><title type="html">브라우저 렌더링</title><link href="http://localhost:4000/blog/2020-01-14-rendering" rel="alternate" type="text/html" title="브라우저 렌더링" /><published>2020-01-14T00:00:00+09:00</published><updated>2020-01-14T00:00:00+09:00</updated><id>http://localhost:4000/blog/rendering</id><content type="html" xml:base="http://localhost:4000/blog/2020-01-14-rendering">&lt;p&gt;코딩을 하다가 화면에 내가 코딩한 화면이 어떻게 그려지는가 궁금해졌다. 
+어떻게 그려지는가를 알면 웹 성능을 최적화 하는데에 도움이 될 거 같아 포스트를 해본다.&lt;/p&gt;
+
+&lt;p&gt;클라이언트가 브라우저 검색창에 주소를 치면 웹 서버는 해당 주소에 맞는 html문서를 내보낸다.&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    
+    &lt;div style=&quot;flex: 100.0%&quot;&gt;
+        &lt;img class=&quot;single&quot; src=&quot;/assets/img/pexels/posts/render_img0.png&quot; alt=&quot;render_img0.png&quot; /&gt;
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;해당 주소에 맞는 html문서를 내보낼 때에 렌더링 과정을 거치는데 대부분의 브라우저는 렌더링을 수행하는 렌더링 엔진(Rendering Engine)을 가지고 있다.&lt;/p&gt;
+
+&lt;h3 id=&quot;브라우저별-렌더링-엔진&quot;&gt;브라우저별 렌더링 엔진&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;크롬, 오페라&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;블링크(Blink) - 웹키트에서 파생된 엔진&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;인터넷 익스플로러&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;트라이던트(Trident)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;파이어폭스, 모질라&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;게코(Gecko)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;사파리&lt;/strong&gt;
+    &lt;ul&gt;
+      &lt;li&gt;웹키트(Webkit)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;브라우저마다 렌더링 엔진이 다르기 때문에 똑같은 html문서를 렌더링 하는 과정에서 미세한 차이가 존재한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;렌더링-엔진-동작-과정&quot;&gt;렌더링 엔진 동작 과정&lt;/h2&gt;
+
+&lt;p&gt;아래는 Webkit 엔진 기준으로 설명한다.&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    
+    &lt;div style=&quot;flex: 100.0%&quot;&gt;
+        &lt;img class=&quot;single&quot; src=&quot;/assets/img/pexels/posts/render_img2.png&quot; alt=&quot;render_img2.png&quot; /&gt;
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;h3 id=&quot;1-불러오기&quot;&gt;1. 불러오기&lt;/h3&gt;
+
+&lt;p&gt;서버로부터 전달 받는 리소스 스트림을 읽는 과정이다. 읽으면서 어떤 파일인지, 데이터인지 파일을 다운로드 할 것인지 등을 결정한다.&lt;/p&gt;
+
+&lt;h3 id=&quot;2-파싱과-dom-트리-구축&quot;&gt;2. 파싱과 DOM 트리 구축&lt;/h3&gt;
+
+&lt;p&gt;웹 엔진이 가지고 있는 HTML/XML 파서가 문서를 파싱해서 DOM TREE를 만든다.
+파싱이란 브라우저가 코드를 이해하고 사용할 수 있는 구조로 변환하는 작업이다.
+여기서 DOM TREE란 HTML 구조를 있는 그대로 표현하는 트리라고 할 수 있겠다.&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    
+    &lt;div style=&quot;flex: 100.0%&quot;&gt;
+        &lt;img class=&quot;single&quot; src=&quot;/assets/img/pexels/posts/render_img3.png&quot; alt=&quot;render_img3.png&quot; /&gt;
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;h3 id=&quot;3-cssom-css-object-model-구축&quot;&gt;3. CSSOM (CSS Object Model) 구축&lt;/h3&gt;
+
+&lt;p&gt;브라우저가 HTML을 파싱하는 과정에서 css파일을 불러오게 된다. css 파일을 불러온 뒤, HTML과 마찬가지로 브라우저가 이해하고 처리할 수 있는 형식으로 변환해야 한다.
+그 과정은 DOM을 생성하는 과정과 동일하다. 단 출력된 결과는 CSSOM(CSS Object Model) 이라고 부른다.&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    
+    &lt;div style=&quot;flex: 100.0%&quot;&gt;
+        &lt;img class=&quot;single&quot; src=&quot;/assets/img/pexels/posts/render_img4.png&quot; alt=&quot;render_img4.png&quot; /&gt;
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;h3 id=&quot;4-렌더-트리-render-tree&quot;&gt;4. 렌더 트리 (Render Tree)&lt;/h3&gt;
+
+&lt;p&gt;앞서 만든 DOM 트리와, CSSOM 트리는 서로 연관이 없는 독립적인 객체이다. DOM 트리는 콘텐츠를 의미하고, CSSOM은 문서에 적용되어야 하는 스타일 규칙을 의미한다.
+&lt;strong&gt;이 두 개의 트리를 결합하여 렌더 트리를 생성&lt;/strong&gt;
+한다.&lt;/p&gt;
+
+&lt;p&gt;렌더 트리는 DOM 트리의 최상위 노드부터 각각의 노드를 탐색하여 렌더링에 필요한 노드들을 CSSOM 트리와 일치시켜 생성한다. 그리고 DOM 트리를 탐색하는 과정에서 렌더링 출력에 반영되지 않는 불필요한 노드들은 건너뛰게 된다. 예를들면 script 태그나, meta 태그 같은 것들이 있다. 또한 display:none 처럼 CSS를 통해 렌더링 출력에 반영되지 않는 노드들도 실제 화면에서 렌더링이 되지 않기 때문에 렌더 트리에서 제외된다. 다만 visibility:hidden 속성은 렌더 트리에 포함된다. 그 이유는 visibility:hidden 속성은 렌더링이 되더라도 여전히 레이아웃에서 공간을 차지하기 때문이다.&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    
+    &lt;div style=&quot;flex: 100.0%&quot;&gt;
+        &lt;img class=&quot;single&quot; src=&quot;/assets/img/pexels/posts/render_img5.png&quot; alt=&quot;render_img5.png&quot; /&gt;
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;h3 id=&quot;5-레이아웃-처리&quot;&gt;5. 레이아웃 처리&lt;/h3&gt;
+
+&lt;p&gt;렌더 트리는 DOM 트리와 CSSOM 트리에 의해 정의된 스타일만 계산하였다. 하지만 기기의 뷰포트(Viewport) 내에서의 정확한 위치 및 크기는 계산되지 않았다.&lt;/p&gt;
+
+&lt;p&gt;예를들어 CSS에 width:50% 로 정의되어 있다고 하면, 실제 브라우저에서 표현되는 정확한 사이즈는 계산되지 않았다는 의미이다.&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    
+    &lt;div style=&quot;flex: 100.0%&quot;&gt;
+        &lt;img class=&quot;single&quot; src=&quot;/assets/img/pexels/posts/render_img6.png&quot; alt=&quot;render_img6.png&quot; /&gt;
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;따라서 브라우저에 출력하기 전 실제 출력되는 정확한 위치와 크기를 계산하여야 한다. 그 단계가 레이아웃 (layout)이라고 한다. 이 단계에서는 각 객체의 정확한 위치 및 크기를 계산하기 위해 렌더 트리의 루트에서부터 탐색해 실제 픽셀 값을 구하여 박스 모델 (Box Model)을 출력한다.&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    
+    &lt;div style=&quot;flex: 100.0%&quot;&gt;
+        &lt;img class=&quot;single&quot; src=&quot;/assets/img/pexels/posts/render_img7.png&quot; alt=&quot;render_img7.png&quot; /&gt;
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;h3 id=&quot;6-페인트&quot;&gt;6. 페인트&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Layout 계산이 완료&lt;/strong&gt;
+되면 이제 &lt;strong&gt;요소들을 실제 화면을 그리게 된다.&lt;/strong&gt; 이전 단계에서 이미 요소들의 위치와 크기, 스타일 계산이 완료된 Render Tree 를 이용해 실제 픽셀 값을 채워넣게 된다. 이 때 &lt;strong&gt;텍스트, 색, 이미지, 그림자 효과등&lt;/strong&gt;
+이 모두 처리되어 그려진다. 이 때 처리해야 하는 스타일이 복잡할수록 Paint 단계에 소요되는 시간이 늘어나게 된다. 간단한 예시로 단순한 단색 background-color의 경우 paint 속도가 빠르지만 그라데이션이나 그림자 효과등은 painting 소요시간이 비교적 더 오래 소요된다.&lt;/p&gt;
+
+&lt;h3 id=&quot;7-리플로우와-리페인트&quot;&gt;7. 리플로우와 리페인트&lt;/h3&gt;
+
+&lt;p&gt;리플로우(Reflow)란 생성된 DOM 노드의 레이아웃(너비, 높이 등) 변경 시, 영향받은 모든 노드(자식, 부모 등)의 수치를 다시 계산하여 렌더 트리를 재생성하는 작업이다.&lt;/p&gt;
+
+&lt;p&gt;리페인트(Repaint)란 Reflow 과정이 끝난 후 재생성된 렌더 트리를 다시 그리는 작업이다.&lt;/p&gt;
+
+&lt;h3 id=&quot;8-렌더링-최적화-reflow-repaint-줄이기&quot;&gt;8. 렌더링 최적화 (Reflow, Repaint 줄이기)&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Reflow가 일어나는 대표적인 경우&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;페이지 초기 렌더링 시(최초 Layout 과정)&lt;/li&gt;
+  &lt;li&gt;윈도우 리사이징 시 (Viewport 크기 변경시)&lt;/li&gt;
+  &lt;li&gt;노드 추가 또는 제거&lt;/li&gt;
+  &lt;li&gt;요소의 위치, 크기 변경 (left, top, margin, padding, border, width, height, 등..)&lt;/li&gt;
+  &lt;li&gt;폰트 변경 과(텍스트 내용) 이미지 크기 변경(크기가 다른 이미지로 변경 시)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Reflow 발생 코드&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;    &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reFlow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+        &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;container&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;width&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;600px&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;repaint-paint&quot;&gt;Repaint (Paint)&lt;/h4&gt;
+&lt;p&gt;Reflow 발생 이유와 같이 스타일의 모든 변경이 레이아웃 수치에 영향을 받는것은 아니다.&lt;/p&gt;
+
+&lt;p&gt;즉, 노드의 background-color, visibillty, outline 등의 스타일 변경 시에는 레이아웃 수치가 변경되지 않으므로 Reflow 과정이 생략된 Repaint 과정만 일어나게 된다.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Repaint 발생 코드&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;    &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;rePaint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; 
+        &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;container&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;backgroundColor&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;red&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; 
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;해결방법&quot;&gt;해결방법&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;클래스 변화에 따른 스타일 변화를 원할 경우, 최대한 DOM 구조 상 끝단에 위치한 노드에 주어라.&lt;/li&gt;
+  &lt;li&gt;인라인 스타일을 최대한 배제하라.&lt;/li&gt;
+  &lt;li&gt;애니메이션이 들어간 엘리먼트는 가급적 position:fixed 또는 position:absolute 로 지정&lt;/li&gt;
+  &lt;li&gt;퀄리티와 퍼포먼스 사이에서 타협하라&lt;/li&gt;
+  &lt;li&gt;테이블 레이아웃을 피하라&lt;/li&gt;
+  &lt;li&gt;IE의 경우, CSS에서의 JS표현식을 피하라.&lt;/li&gt;
+  &lt;li&gt;JS를 통해 스타일변화를 주어야 할 경우, 가급적 한번에 처리하라.&lt;/li&gt;
+  &lt;li&gt;CSS Rules는 필요한 만큼만 정리하라.&lt;/li&gt;
+  &lt;li&gt;position:relative 사용 시 주의하자&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;참고사이트&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://boxfoxs.tistory.com/408&quot; target=&quot;_blank&quot;&gt;boxfoxs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://d2.naver.com/helloworld/59361&quot; target=&quot;_blank&quot;&gt;naverD2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lists.w3.org/Archives/Public/public-html-ig-ko/2011Sep/att-0031/Reflow_____________________________Tip.pdf&quot; target=&quot;_blank&quot;&gt;Reflow 원인과 마크업 최적화&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">코딩을 하다가 화면에 내가 코딩한 화면이 어떻게 그려지는가 궁금해졌다. 어떻게 그려지는가를 알면 웹 성능을 최적화 하는데에 도움이 될 거 같아 포스트를 해본다.</summary></entry><entry><title type="html">수직정렬</title><link href="http://localhost:4000/blog/2020-01-13-vertical" rel="alternate" type="text/html" title="수직정렬" /><published>2020-01-13T00:00:00+09:00</published><updated>2020-01-13T00:00:00+09:00</updated><id>http://localhost:4000/blog/vertical</id><content type="html" xml:base="http://localhost:4000/blog/2020-01-13-vertical">&lt;p&gt;작업을 하다보면 가운데로 정렬하는 방법에 대해 고민하게 된다.&lt;/p&gt;
+
+&lt;p&gt;초창기엔 무조건 화면을 그려내는것이 코딩인 줄 알았다.
+그게 참 한심한 생각이라는 건 프로젝트를 작업할 때에 부딪히는 이슈들을 경험하며 알게되었다.
+아래는 수직정렬하는 기본적인 방법에 대해 적어봤다.
+초창기에 보면 도움이 많이 될 거 같다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;padding을-사용한-방법&quot;&gt;padding을 사용한 방법&lt;/h2&gt;
+
+&lt;iframe height=&quot;265&quot; style=&quot;width: 100%;&quot; scrolling=&quot;no&quot; title=&quot;povYQMP&quot; src=&quot;https://codepen.io/ahyoung/embed/povYQMP?height=265&amp;amp;theme-id=default&amp;amp;default-tab=css,result&quot; frameborder=&quot;no&quot; allowtransparency=&quot;true&quot; allowfullscreen=&quot;true&quot;&gt;
+    See the Pen &lt;a href=&quot;https://codepen.io/ahyoung/pen/povYQMP&quot;&gt;povYQMP&lt;/a&gt; by ahyoung
+    (&lt;a href=&quot;https://codepen.io/ahyoung&quot;&gt;@ahyoung&lt;/a&gt;) on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.
+&lt;/iframe&gt;
+
+&lt;p&gt;이 방법은 개인적으로는 추천하지 않는다. 왜냐하면 만약에 부모의 높이값이 달라졌을 때마다 padding 값을 손수 수정해줘야 한다는 단점이 있기 때문이다.
+하지만 고정적이고 아주 간단한 레이아웃일 때에는 써도 무방하다.&lt;/p&gt;
+
+&lt;h2 id=&quot;position을-사용한-방법&quot;&gt;position을 사용한 방법&lt;/h2&gt;
+
+&lt;iframe height=&quot;265&quot; style=&quot;width: 100%;&quot; scrolling=&quot;no&quot; title=&quot;qBEvQeJ&quot; src=&quot;https://codepen.io/ahyoung/embed/qBEvQeJ?height=265&amp;amp;theme-id=default&amp;amp;default-tab=css,result&quot; frameborder=&quot;no&quot; allowtransparency=&quot;true&quot; allowfullscreen=&quot;true&quot;&gt;
+    See the Pen &lt;a href=&quot;https://codepen.io/ahyoung/pen/qBEvQeJ&quot;&gt;qBEvQeJ&lt;/a&gt; by ahyoung
+    (&lt;a href=&quot;https://codepen.io/ahyoung&quot;&gt;@ahyoung&lt;/a&gt;) on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.
+&lt;/iframe&gt;
+
+&lt;p&gt;포지션을 사용해 부모의 높이값이 변화했을때에도 유동적으로 가운데 위치할 수 있다.&lt;/p&gt;
+
+&lt;h2 id=&quot;가상선택자인-before-after를-이용한-방법&quot;&gt;가상선택자인 before, after를 이용한 방법&lt;/h2&gt;
+
+&lt;iframe height=&quot;265&quot; style=&quot;width: 100%;&quot; scrolling=&quot;no&quot; title=&quot;povYqzP&quot; src=&quot;https://codepen.io/ahyoung/embed/povYqzP?height=265&amp;amp;theme-id=default&amp;amp;default-tab=css,result&quot; frameborder=&quot;no&quot; allowtransparency=&quot;true&quot; allowfullscreen=&quot;true&quot;&gt;
+    See the Pen &lt;a href=&quot;https://codepen.io/ahyoung/pen/povYqzP&quot;&gt;povYqzP&lt;/a&gt; by ahyoung
+    (&lt;a href=&quot;https://codepen.io/ahyoung&quot;&gt;@ahyoung&lt;/a&gt;) on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.
+&lt;/iframe&gt;
+
+&lt;p&gt;가상선택자인 before, after 를 이용해서 형제 인라인 요소를 생성후에 인라인 요소끼리 형제일 경우 vertical-align 속성을 사용할 수 있음을 이용한다.&lt;/p&gt;
+
+&lt;h2 id=&quot;display-table-속성을-이용한-방법&quot;&gt;display: table 속성을 이용한 방법&lt;/h2&gt;
+
+&lt;iframe height=&quot;265&quot; style=&quot;width: 100%;&quot; scrolling=&quot;no&quot; title=&quot;dyPrwXE&quot; src=&quot;https://codepen.io/ahyoung/embed/dyPrwXE?height=265&amp;amp;theme-id=default&amp;amp;default-tab=css,result&quot; frameborder=&quot;no&quot; allowtransparency=&quot;true&quot; allowfullscreen=&quot;true&quot;&gt;
+    See the Pen &lt;a href=&quot;https://codepen.io/ahyoung/pen/dyPrwXE&quot;&gt;dyPrwXE&lt;/a&gt; by ahyoung
+    (&lt;a href=&quot;https://codepen.io/ahyoung&quot;&gt;@ahyoung&lt;/a&gt;) on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.
+&lt;/iframe&gt;
+
+&lt;p&gt;테이블의 셀(즉 td,th) 은 vertical-align 속성이 있는것을 이용하여 디스플레이의 환경을 테이블로 바꾼다.&lt;/p&gt;</content><author><name></name></author><summary type="html">작업을 하다보면 가운데로 정렬하는 방법에 대해 고민하게 된다.</summary></entry><entry><title type="html">디스플레이</title><link href="http://localhost:4000/blog/2020-01-12-display" rel="alternate" type="text/html" title="디스플레이" /><published>2020-01-12T00:00:00+09:00</published><updated>2020-01-12T00:00:00+09:00</updated><id>http://localhost:4000/blog/display</id><content type="html" xml:base="http://localhost:4000/blog/2020-01-12-display">&lt;h2 id=&quot;block-요소&quot;&gt;block 요소&lt;/h2&gt;
+
+&lt;p&gt;ex) div,ul,li,h1~h6,header,footer,nav,section 등&lt;/p&gt;
+
+&lt;p&gt;기준이 되는 부모의 width에 꽉 찬다.
+width 속성을 주면 부모 width 와의 차이만큼 자동으로 margin 처리된다.
+즉, width가 주어진 block요소를 가운데로 보내고자 한다면 나머지 영역의 margin값을 양쪽에 동일하게 분할해주어야 한다. 이와같은 css값이 auto 이다.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;display-block&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+.display-block {
+    margin: 0 auto;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;inline-요소&quot;&gt;inline 요소&lt;/h2&gt;
+
+&lt;p&gt;ex) a, span, img, input, em 등&lt;/p&gt;
+
+&lt;p&gt;기본적으로 자기 자신이 갖은 컨텐츠의 크기만을 갖는다. width, height, margin-top, margin-bottom, padding-top, padding-bottom 의값을 인식할수 없다. width, height, padding, margin의 값을 제대로 반영하기 위해선, display를 block, 혹은 inline-block(편하게 width, height, padding, margin 의 프로퍼티를 갖는 inline 요소정도로 생각하면 되겠다.) 으로 주어야한다.
+inline요소를 센터로 보내는 방법은 부모에게 text-align:center 를 주면 된다.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;inline-wrap&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;span&amp;gt;&lt;/span&gt;inline 요소&lt;span class=&quot;nt&quot;&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+.inline-wrap {
+    text-align:center
+}&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;table-요소&quot;&gt;table 요소&lt;/h2&gt;
+
+&lt;p&gt;ex) table, table-cell, table-row 등&lt;/p&gt;
+
+&lt;p&gt;display 속성을 table 속성으로 바꿔준다.
+table을 보면 갯수가 몇개까지 늘어나든 동일한 너비를 구현할 수 있다.table 속성으로 바꾸면서까지 이 속성을 쓰는 이유는 유동적인 레이아웃을 만들기 위해서다.
+뒤에서 다룰 flex를 써도 유동적인 레이아웃을 만들 수 있다.
+하지만 flex는 ie10이상을 지원한다. 때문에 하위 브라우저까지 신경써야 하는 프로젝트라면 display: table;로 레이아웃을 짜는걸 추천한다.&lt;/p&gt;
+
+&lt;iframe height=&quot;265&quot; style=&quot;width: 100%;&quot; scrolling=&quot;no&quot; title=&quot;zYYdmOG&quot; src=&quot;https://codepen.io/ahyoung/embed/zYYdmOG?height=265&amp;amp;theme-id=default&amp;amp;default-tab=css,result&quot; frameborder=&quot;no&quot; allowtransparency=&quot;true&quot; allowfullscreen=&quot;true&quot;&gt;
+    See the Pen &lt;a href=&quot;https://codepen.io/ahyoung/pen/zYYdmOG&quot;&gt;zYYdmOG&lt;/a&gt; by ahyoung
+    (&lt;a href=&quot;https://codepen.io/ahyoung&quot;&gt;@ahyoung&lt;/a&gt;) on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.
+&lt;/iframe&gt;
+
+&lt;p&gt;위에 코드펜을 보면 알 수 있듯이 목록의 갯수가 3개,2개,1개 일 때에 유동적인 레이아웃을 구현해냈다.
+네이버 톡톡, 파스타, 파트너센터에서 가장 많이 사용한 속성이다.&lt;/p&gt;
+
+&lt;h2 id=&quot;flexbox-요소&quot;&gt;flexbox 요소&lt;/h2&gt;
+
+&lt;p&gt;ex) flex, flex-wrap, flex-grow, flex-shrink, flex-basis, order 등&lt;/p&gt;
+
+&lt;p&gt;일반적인 웹 페이지 레이아웃은 display, float, position 등과 같은 속성을 사용해 구현한다.
+하지만 이 속성들은 구현 방법이 복잡하고 한계가 있다.
+flexbox를 사용하면 요소의 크기와 순서를 유연하게 배치할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;flexbox는 유동적인 웹 페이지에 효율적으로 요소를 배치, 정렬, 분산할 수 있다.
+복잡한 계산 없이 요소의 크기와 순서를 유연하게 배치할 수 있다.
+네이버 파트너센터 개편때에 회원가입 페이지를 마크업하면서 고민이 많았다.
+어떻게 하면 유동적으로 레이아웃할 수 있을까.. 많은 고민 끝에 선택한건 flex였다.
+이것 또한, ie10이상부터 지원하기로 했기 때문에 가능했던 일이었다.&lt;/p&gt;
+
+&lt;p&gt;하지만, 여기서 변수가 있다. ie10 이상을 완전히 지원하지는 않는다는것이다. 10,11에서 버그가 발견되기도 한다.
+모바일 브라우저는 거의 대부분 지원한다고 봐도 무방하다.
+(&lt;a href=&quot;https://caniuse.com/#search=flex&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;Can I use 사이트의 ‘flex’ 검색 결과&lt;/strong&gt;&lt;/a&gt;참고.)&lt;/p&gt;
+
+&lt;iframe height=&quot;265&quot; style=&quot;width: 100%;&quot; scrolling=&quot;no&quot; title=&quot;pBmzgw&quot; src=&quot;https://codepen.io/ahyoung/embed/pBmzgw?height=265&amp;amp;theme-id=default&amp;amp;default-tab=css,result&quot; frameborder=&quot;no&quot; allowtransparency=&quot;true&quot; allowfullscreen=&quot;true&quot;&gt;
+    See the Pen &lt;a href=&quot;https://codepen.io/ahyoung/pen/pBmzgw&quot;&gt;pBmzgw&lt;/a&gt; by ahyoung
+    (&lt;a href=&quot;https://codepen.io/ahyoung&quot;&gt;@ahyoung&lt;/a&gt;) on &lt;a href=&quot;https://codepen.io&quot;&gt;CodePen&lt;/a&gt;.
+&lt;/iframe&gt;
+
+&lt;p&gt;위에 코드펜을 보면 알 수 있듯이 유연한 레이아웃을 구현해냈다.
+실제 페이지에도 적용하여 만족스러운 결과를 얻었다.&lt;/p&gt;</content><author><name></name></author><category term="display" /><category term="inline" /><category term="inline-block" /><category term="block" /><summary type="html">block 요소</summary></entry><entry><title type="html">jekyll을 이용해 자신만의 Github Blog 만들기</title><link href="http://localhost:4000/blog/2019-12-29-jekyll" rel="alternate" type="text/html" title="jekyll을 이용해 자신만의 Github Blog 만들기" /><published>2019-12-29T00:00:00+09:00</published><updated>2019-12-29T00:00:00+09:00</updated><id>http://localhost:4000/blog/jekyll</id><content type="html" xml:base="http://localhost:4000/blog/2019-12-29-jekyll">&lt;p&gt;&lt;a href=&quot;https://jekyllrb-ko.github.io/&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;Jelyll&lt;/strong&gt;&lt;/a&gt;은 markdown으로 작성된 문서를 HTML로 변환하여 웹사이트를 구축할 수 있도록 돕는 Static Website generator로 Ruby로 작성되어 있다. HTML/CSS등의 정적파일만으로 사이트를 생성하므로 매우 빠르고 가벼우며 무료이다.&lt;/p&gt;
+
+&lt;h2 id=&quot;설치과정&quot;&gt;설치과정&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-github에-새로운-repository-만들기&quot;&gt;1. github에 새로운 repository 만들기&lt;/h3&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    
+    &lt;div style=&quot;flex: 100.0%&quot;&gt;
+        &lt;img class=&quot;single&quot; src=&quot;/assets/img/pexels/posts/jekyll_img1.png&quot; alt=&quot;jekyll_img1.png&quot; /&gt;
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;Github에서 새로운 저장소를 만든다. 이 때 저장소의 이름을 자신의 이름 뒤에 .github.io가 붙은 이름으로 짓는다.
+이렇게 해야 yourname.github.io의 도메인으로 접속할 수 있는 블로그가 된다.&lt;/p&gt;
+
+&lt;h3 id=&quot;2-환경세팅&quot;&gt;2. 환경세팅&lt;/h3&gt;
+&lt;p&gt;아래 설명은 윈도우 환경에서 설치한 내용이다.
+우선 &lt;a href=&quot;https://rubyinstaller.org/downloads/&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;Ruby&lt;/strong&gt;&lt;/a&gt;를 설치한다.&lt;br /&gt;
+설치가 완료되면 윈도우 메뉴에서 Start Command Promt with Ruby 를 검색하면 다음과 같이 나타난다.&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    
+    &lt;div style=&quot;flex: 100.0%&quot;&gt;
+        &lt;img class=&quot;single&quot; src=&quot;/assets/img/pexels/posts/jekyll_img2.png&quot; alt=&quot;jekyll_img2.png&quot; /&gt;
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;해당 커맨드에서&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;    &lt;span class=&quot;nx&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;jekyll&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;을 입력해주면 설치가 진행된다.&lt;/p&gt;
+
+&lt;p&gt;설치 이후 바로&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;    &lt;span class=&quot;nx&quot;&gt;jekyll&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;를 실행하면 정상적으로 동작하지 않는다. 이유는 의존성을 갖는 패키지들의 설치가 필요하기 때문인데 오류를 보고 구글링하여 설치해도 되지만 필요한 파일을 미리 설치한다면 시간이 절약되므로 아래 패키지들을 미리 설치해준다.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;    &lt;span class=&quot;nx&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;bundler&lt;/span&gt; 
+
+    &lt;span class=&quot;nx&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;minima&lt;/span&gt; 
+
+    &lt;span class=&quot;nx&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;jekyll&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;feed&lt;/span&gt; 
+
+    &lt;span class=&quot;nx&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;tzinfo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;data&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;설치가 끝나면&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;    &lt;span class=&quot;nx&quot;&gt;jekyll&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;를 다시 실행해보자.&lt;/p&gt;
+
+&lt;p&gt;정상적으로 설치가 완료됐다면 jekyll serve를 실행해보자.
+jekyll 가 내장하고 있는 서버가 동작하고 로컬PC에서도 생성된 사이트를 확인할 수 있다.
+로컬에서 확인하기 위해서는 브라우저에서 http://localhost:4000 으로 접속해보자.
+아래 화면이 나왔다면 설치에 성공한것이다.&lt;/p&gt;
+
+&lt;div class=&quot;row&quot;&gt;
+    
+    &lt;div style=&quot;flex: 100.0%&quot;&gt;
+        &lt;img class=&quot;single&quot; src=&quot;/assets/img/pexels/posts/jekyll_img3.png&quot; alt=&quot;jekyll_img3.png&quot; /&gt;
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+&lt;p&gt;여기까지 설치과정에 대해 알아봤고, 다음 포스팅 때엔 jekyll 폴더구조 및 테마 적용에 대해 알아보겠다.&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="github" /><summary type="html">Jelyll은 markdown으로 작성된 문서를 HTML로 변환하여 웹사이트를 구축할 수 있도록 돕는 Static Website generator로 Ruby로 작성되어 있다. HTML/CSS등의 정적파일만으로 사이트를 생성하므로 매우 빠르고 가벼우며 무료이다.</summary></entry><entry><title type="html">Sample post</title><link href="http://localhost:4000/blog/2019-06-30-sample-post" rel="alternate" type="text/html" title="Sample post" /><published>2019-06-30T00:00:00+09:00</published><updated>2019-06-30T00:00:00+09:00</updated><id>http://localhost:4000/blog/sample-post</id><content type="html" xml:base="http://localhost:4000/blog/2019-06-30-sample-post">&lt;p&gt;Consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. 
 Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. 
 &lt;!--more--&gt;
 Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem.&lt;/p&gt;
@@ -71,601 +1109,4 @@ looking at this cheerful and colorful them, I wanted to enable something similar
 If you want another one, put it in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/assets/img&lt;/code&gt; as well.&lt;/p&gt;
 &lt;blockquote&gt;
   &lt;p&gt;⚠️ It’s a bit hacking the css in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;post.html&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>Sylhare</name></author><category term="Test" /><category term="Color" /><category term="Markdown" /><summary type="html">What a colorful post! This is an idea that came from xukimseven/HardCandy-Jekyll looking at this cheerful and colorful them, I wanted to enable something similar for mine. You can go fork and star hers too! 😉</summary></entry><entry><title type="html">Feature images</title><link href="http://localhost:4000/blog/2014-11-29-feature-images" rel="alternate" type="text/html" title="Feature images" /><published>2014-11-29T00:00:00+09:00</published><updated>2014-11-29T00:00:00+09:00</updated><id>http://localhost:4000/blog/feature-images</id><content type="html" xml:base="http://localhost:4000/blog/2014-11-29-feature-images">&lt;p&gt;Hopefully you will find enough information about how to set images in your blog here.
-This is an example of a post which includes a feature image specified in the front matter of the post. 
-The feature image spans the full-width of the page, and is shown with the title on permalink pages:&lt;/p&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;feature-img&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;assets/img/pexels/desk-messy.jpeg&quot;&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;thumbnail&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;assets/img/thumbnails/desk-messy.jpeg&quot;&lt;/span&gt; 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;You can also use a thumbnail, a smaller version of the same image to improve loading of the page.
-The thumbnail will also be used when you share your article on other platform (linkedin, whatsapp, facebook, …).&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;ul&gt;
-    &lt;li&gt;And now it is working&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;You can also add images aligned in your post using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;aligner&lt;/code&gt; include.
-Make sure to separate all of the image path from in a string separated with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;,&lt;/code&gt;.
-It by default look into &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;assets/img/&lt;/code&gt; so give the path from there, example:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;% include &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;aligner&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;images&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pexels/book-glass.jpeg,triangle.png&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;div class=&quot;row&quot;&gt;
-    
-    &lt;div class=&quot;column&quot;&gt;
-        &lt;img src=&quot;/assets/img/pexels/book-glass.jpeg&quot; alt=&quot;book-glass.jpeg&quot; /&gt;
-    &lt;/div&gt;
-    
-    &lt;div class=&quot;column&quot;&gt;
-        &lt;img src=&quot;/assets/img/pexels/desk-messy.jpeg&quot; alt=&quot;desk-messy.jpeg&quot; /&gt;
-    &lt;/div&gt;
-    
-&lt;/div&gt;
-
-&lt;p&gt;Here you have two images side by side, but you can set more and set the amount per columns 
-(by specifying the number of columns or let it be automatic using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;auto&quot;&lt;/code&gt;):&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;% include &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;aligner&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;images&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;portfolio/cabin.png,portfolio/cake.png,portfolio/circus.png&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;column&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;div class=&quot;row&quot;&gt;
-    
-    &lt;div style=&quot;flex: 33.333333333333336%&quot;&gt;
-        &lt;img src=&quot;/assets/img/portfolio/cabin.png&quot; alt=&quot;cabin.png&quot; /&gt;
-    &lt;/div&gt;
-    
-    &lt;div style=&quot;flex: 33.333333333333336%&quot;&gt;
-        &lt;img src=&quot;/assets/img/portfolio/cake.png&quot; alt=&quot;cake.png&quot; /&gt;
-    &lt;/div&gt;
-    
-    &lt;div style=&quot;flex: 33.333333333333336%&quot;&gt;
-        &lt;img src=&quot;/assets/img/portfolio/circus.png&quot; alt=&quot;circus.png&quot; /&gt;
-    &lt;/div&gt;
-    
-&lt;/div&gt;
-
-&lt;p&gt;it also works with only one images, it is made to display it smaller than normally.
-However you can just use the Markdown way of doing it to get the image normal sized and centered.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;c1&quot;&gt;# Markdown way (bigger)&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Travel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]({{&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;/assets/img/pexels/story.jpeg&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;relative_url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}})&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# Aligner with only One (50% of width)&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;% include &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;aligner&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;images&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pexels/story.jpeg&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;div class=&quot;row&quot;&gt;
-    
-    &lt;div class=&quot;column&quot;&gt;
-        &lt;img class=&quot;single&quot; src=&quot;/assets/img/pexels/story.jpeg&quot; alt=&quot;story.jpeg&quot; /&gt;
-    &lt;/div&gt;
-    
-&lt;/div&gt;</content><author><name></name></author><category term="Test" /><category term="Lorem" /><summary type="html">Hopefully you will find enough information about how to set images in your blog here. This is an example of a post which includes a feature image specified in the front matter of the post. The feature image spans the full-width of the page, and is shown with the title on permalink pages:</summary></entry><entry><title type="html">Markdown and HTML</title><link href="http://localhost:4000/blog/2014-11-28-markdown-and-html" rel="alternate" type="text/html" title="Markdown and HTML" /><published>2014-11-28T00:00:00+09:00</published><updated>2014-11-28T00:00:00+09:00</updated><id>http://localhost:4000/blog/markdown-and-html</id><content type="html" xml:base="http://localhost:4000/blog/2014-11-28-markdown-and-html">&lt;p&gt;Jekyll supports the use of &lt;a href=&quot;http://daringfireball.net/projects/markdown/syntax&quot;&gt;Markdown&lt;/a&gt; with inline HTML tags which makes it easier to quickly write posts with Jekyll, without having to worry too much about text formatting. A sample of the formatting follows.&lt;/p&gt;
-
-&lt;h2 id=&quot;title&quot;&gt;Title&lt;/h2&gt;
-
-&lt;h3 id=&quot;sub-title&quot;&gt;Sub title&lt;/h3&gt;
-
-&lt;p&gt;Tables have also been extended from Markdown:&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;First Header&lt;/th&gt;
-      &lt;th&gt;Second Header&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Content Cell&lt;/td&gt;
-      &lt;td&gt;Content Cell&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Content Cell&lt;/td&gt;
-      &lt;td&gt;Content Cell&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Here’s an example of an image, which is included using Markdown:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/pexels/book-glass.jpeg&quot; alt=&quot;Image of a glass on a book&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This is another example of list:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;list of things
-    &lt;ol&gt;
-      &lt;li&gt;Sub list&lt;/li&gt;
-      &lt;li&gt;of Other things&lt;/li&gt;
-      &lt;li&gt;with numbers&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;And many more
-    &lt;ul&gt;
-      &lt;li&gt;Sub sub list
-        &lt;ul&gt;
-          &lt;li&gt;can go on …
-            &lt;ul&gt;
-              &lt;li&gt;and on …
-                &lt;ul&gt;
-                  &lt;li&gt;and on !&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;That’s it.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;other-subtitle&quot;&gt;Other subtitle&lt;/h3&gt;
-
-&lt;p&gt;Highlighting for code in Jekyll is done using Base16 or Rouge. This theme makes use of Rouge by default.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// count to ten&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// count to twenty&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h3 id=&quot;math&quot;&gt;Math&lt;/h3&gt;
-
-&lt;p&gt;Type on Strap uses KaTeX to display maths. Equations such as \(S_n = a \times \frac{1-r^n}{1-r}\) can be displayed inline.&lt;/p&gt;
-
-&lt;p&gt;Alternatively, they can be shown on a new line:&lt;/p&gt;
-
-\[f(x) = \int \frac{2x^2+4x+6}{x-2}\]</content><author><name>Rohan Chandra</name></author><category term="Test" /><category term="Markdown" /><summary type="html">Jekyll supports the use of Markdown with inline HTML tags which makes it easier to quickly write posts with Jekyll, without having to worry too much about text formatting. A sample of the formatting follows.</summary></entry><entry><title type="html">What’s your title</title><link href="http://localhost:4000/blog/2014-11-27-whats-your-title" rel="alternate" type="text/html" title="What’s your title" /><published>2014-11-27T00:00:00+09:00</published><updated>2014-11-27T00:00:00+09:00</updated><id>http://localhost:4000/blog/whats-your-title</id><content type="html" xml:base="http://localhost:4000/blog/2014-11-27-whats-your-title">&lt;p&gt;This is an example of a post which includes a feature image that has a
-text, where you don’t want to redisplay the title.
-Mind your image size in order for the text to be displayed where you want it to.
-The only limit is your imagination.&lt;/p&gt;
-
-&lt;p&gt;Here is how the yaml looks inside the post:&lt;/p&gt;
-
-&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;What's your title&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;hide_title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;feature-img&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;assets/img/pexels/story.jpeg&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;mhagnumdw&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;tags&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;Test&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;Lorem&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;You may wonder, why is there a title when you are not actually displaying it. &lt;br /&gt;
-Well that’s due to some jekyll limitation:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;You &lt;strong&gt;can’t&lt;/strong&gt; set the &lt;strong&gt;title&lt;/strong&gt; to the &lt;strong&gt;empty string&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The title is used elsewhere than inside the post, for example in the blog page that list this post.
-An empty title would break those pages and possibly prevents jekyll to render your blog.&lt;/p&gt;</content><author><name>Mhagnumdw</name></author><category term="Test" /><category term="Lorem" /><summary type="html">This is an example of a post which includes a feature image that has a text, where you don’t want to redisplay the title. Mind your image size in order for the text to be displayed where you want it to. The only limit is your imagination.</summary></entry><entry><title type="html">The Real Lorem Ipsum</title><link href="http://localhost:4000/blog/2014-11-26-lorem-ipsum" rel="alternate" type="text/html" title="The Real Lorem Ipsum" /><published>2014-11-26T00:00:00+09:00</published><updated>2014-11-26T00:00:00+09:00</updated><id>http://localhost:4000/blog/lorem-ipsum</id><content type="html" xml:base="http://localhost:4000/blog/2014-11-26-lorem-ipsum">&lt;h2 id=&quot;lorem-ipsum&quot;&gt;Lorem Ipsum&lt;/h2&gt;
-
-&lt;p&gt;from &lt;em&gt;“de Finibus Bonorum et Malorum”&lt;/em&gt; written by Cicero in 45 BC.
- &lt;!--more--&gt;
-Find out more on &lt;a href=&quot;https://www.lipsum.com/&quot;&gt;lipsum.com&lt;/a&gt;. And if you like colors, check out the &lt;a href=&quot;https://www.w3schools.com/colors/colors_trends.asp&quot;&gt;http color trends&lt;/a&gt; from w3schools.&lt;/p&gt;
-
-&lt;h3 id=&quot;the-standard-lorem-ipsum-passage-since-1500s&quot;&gt;The standard Lorem Ipsum passage (since 1500s)&lt;/h3&gt;
-
-&lt;p&gt;“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”&lt;/p&gt;
-
-&lt;h3 id=&quot;section-11032&quot;&gt;Section 1.10.32&lt;/h3&gt;
-
-&lt;h4 id=&quot;latin&quot;&gt;Latin&lt;/h4&gt;
-&lt;p&gt;“Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?”&lt;/p&gt;
-
-&lt;h4 id=&quot;translation-by-h-rackham-1914&quot;&gt;Translation by H. Rackham (1914)&lt;/h4&gt;
-&lt;p&gt;“But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?”&lt;/p&gt;
-
-&lt;h3 id=&quot;section-11033&quot;&gt;Section 1.10.33&lt;/h3&gt;
-
-&lt;h4 id=&quot;latin-1&quot;&gt;Latin&lt;/h4&gt;
-
-&lt;p&gt;“At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.”&lt;/p&gt;
-
-&lt;h4 id=&quot;translation-by-h-rackham-1914-1&quot;&gt;Translation by H. Rackham (1914)&lt;/h4&gt;
-
-&lt;p&gt;“On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.”&lt;/p&gt;</content><author><name></name></author><category term="Lorem" /><category term="Color" /><summary type="html">Lorem Ipsum from “de Finibus Bonorum et Malorum” written by Cicero in 45 BC.</summary></entry><entry><title type="html">Markup: Syntax Highlighting</title><link href="http://localhost:4000/blog/2014-08-08-markup-syntax-highlighting" rel="alternate" type="text/html" title="Markup: Syntax Highlighting" /><published>2014-08-08T00:00:00+09:00</published><updated>2014-08-08T00:00:00+09:00</updated><id>http://localhost:4000/blog/Markup-Syntax-Highlighting</id><content type="html" xml:base="http://localhost:4000/blog/2014-08-08-markup-syntax-highlighting">&lt;p&gt;Syntax highlighting&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; is a feature that displays source code. 
-This feature facilitates writing in a structured language such as a programming language or a markup language as it makes import things visually distinct.&lt;/p&gt;
-
-&lt;h3 id=&quot;gfm-code-blocks&quot;&gt;GFM Code Blocks&lt;/h3&gt;
-
-&lt;p&gt;GitHub Flavored Markdown &lt;a href=&quot;https://help.github.com/articles/creating-and-highlighting-code-blocks/&quot;&gt;fenced code blocks&lt;/a&gt; are supported. To modify styling and highlight colors edit &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/_sass/syntax.scss&lt;/code&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nf&quot;&gt;#container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-240px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-scss&quot; data-lang=&quot;scss&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nc&quot;&gt;.highlight&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$monospace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$type-size-7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;nl&quot;&gt;line-height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;nav&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;pagination&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;navigation&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-  {% if page.previous %}
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{ site.url }}{{ page.previous.url }}&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;btn&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{ page.previous.title }}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Previous article&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-  {% endif %}
-  {% if page.next %}
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{ site.url }}{{ page.next.url }}&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;btn&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;title=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;{{ page.next.title }}&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Next article&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-  {% endif %}
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/nav&amp;gt;&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- /.pagination --&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Jekyll&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;TagIndex&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Page&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;initialize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;base&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dir&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-      &lt;span class=&quot;vi&quot;&gt;@site&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;site&lt;/span&gt;
-      &lt;span class=&quot;vi&quot;&gt;@base&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;base&lt;/span&gt;
-      &lt;span class=&quot;vi&quot;&gt;@dir&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dir&lt;/span&gt;
-      &lt;span class=&quot;vi&quot;&gt;@name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'index.html'&lt;/span&gt;
-      &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;process&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-      &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;read_yaml&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;base&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'_layouts'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'tag_index.html'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-      &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'tag'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tag&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;tag_title_prefix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'tag_title_prefix'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'Tagged: '&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;tag_title_suffix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;config&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'tag_title_suffix'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'&amp;amp;#8211;'&lt;/span&gt;
-      &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'title'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tag_title_prefix&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tag&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-      &lt;span class=&quot;nb&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'description'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;An archive of posts tagged &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tag&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;.&quot;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;code-blocks-in-lists&quot;&gt;Code Blocks in Lists&lt;/h3&gt;
-
-&lt;p&gt;Indentation matters. Be sure the indent of the code block aligns with the first non-space character after the list item marker (e.g., &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1.&lt;/code&gt;). Usually this will mean indenting 3 spaces instead of 4.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Do step 1.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Now do this:&lt;/p&gt;
-
-    &lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Now you can do this.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;github-gist-embed&quot;&gt;GitHub Gist Embed&lt;/h3&gt;
-
-&lt;p&gt;An example of a Gist embed below:&lt;/p&gt;
-
-&lt;script src=&quot;https://gist.github.com/sylhare/dad7ed1ef3d13614c77c4ebadf8a11c3.js&quot;&gt;&lt;/script&gt;
-
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-
-      &lt;p&gt;&lt;span class=&quot;cit-authors&quot;&gt;Michael’s Rose&lt;/span&gt;, &lt;span class=&quot;cit-title&quot;&gt;&lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/markup-syntax-highlighting&quot;&gt;Minimal Mistakes&lt;/a&gt;&lt;/span&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>Michael Rose</name></author><category term="code" /><summary type="html">Syntax highlighting1 is a feature that displays source code. This feature facilitates writing in a structured language such as a programming language or a markup language as it makes import things visually distinct. &amp;#8617;</summary></entry><entry><title type="html">Generate a table of content</title><link href="http://localhost:4000/blog/2013-12-12-generate-a-table-of-content" rel="alternate" type="text/html" title="Generate a table of content" /><published>2013-12-12T00:00:00+09:00</published><updated>2013-12-12T00:00:00+09:00</updated><id>http://localhost:4000/blog/Generate-a-table-of-content</id><content type="html" xml:base="http://localhost:4000/blog/2013-12-12-generate-a-table-of-content">&lt;h1 id=&quot;using-kramdown-gfm-&quot;&gt;Using Kramdown GFM &lt;!--more--&gt;&lt;/h1&gt;
-
-&lt;!-- To be placed at the beginning of the post, it is where the table of content will be generated --&gt;
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#using-kramdown-gfm-&quot; id=&quot;markdown-toc-using-kramdown-gfm-&quot;&gt;Using Kramdown GFM &lt;!--more--&gt;&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#basic-usage&quot; id=&quot;markdown-toc-basic-usage&quot;&gt;Basic Usage&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#using-tocjs&quot; id=&quot;markdown-toc-using-tocjs&quot;&gt;Using toc.js&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#customize-with-tocjs&quot; id=&quot;markdown-toc-customize-with-tocjs&quot;&gt;Customize with toc.js&lt;/a&gt;        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#use-with-this-jekyll-template&quot; id=&quot;markdown-toc-use-with-this-jekyll-template&quot;&gt;Use with this jekyll template&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#basic-usage-1&quot; id=&quot;markdown-toc-basic-usage-1&quot;&gt;Basic Usage&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#how-it-would-look-like&quot; id=&quot;markdown-toc-how-it-would-look-like&quot;&gt;How it would look like&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;basic-usage&quot;&gt;Basic Usage&lt;/h2&gt;
-
-&lt;p&gt;You need to put this at the beginning of the page where you want the table of content to be displayed&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* TOC
-{:toc}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;It will then render the markdown and html titles (lines that begins with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;#&lt;/code&gt; or using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;h1&amp;gt;&amp;lt;/h1&amp;gt;&lt;/code&gt; tages)&lt;/p&gt;
-
-&lt;h1 id=&quot;using-tocjs&quot;&gt;Using toc.js&lt;/h1&gt;
-
-&lt;p&gt;Demo display of &lt;a href=&quot;https://github.com/ghiculescu/jekyll-table-of-contents&quot;&gt;jekyll-table-of-contents&lt;/a&gt; by ghiculescu.&lt;/p&gt;
-
-&lt;!-- To be placed at the beginning of the post, it is where the table of content will be generated --&gt;
-&lt;div id=&quot;toc&quot;&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;customize-with-tocjs&quot;&gt;Customize with toc.js&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/ghiculescu/jekyll-table-of-contents&quot;&gt;toc.js&lt;/a&gt; stands for table of content, it is a js plugin that generates automatically a table of content of a post.&lt;/p&gt;
-
-&lt;h3 id=&quot;use-with-this-jekyll-template&quot;&gt;Use with this jekyll template&lt;/h3&gt;
-
-&lt;p&gt;If you want to customize the theme it is up to you, you can add the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;toc.js&lt;/code&gt; file into the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;asset &amp;gt; js&lt;/code&gt; and add it into the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;page.html&lt;/code&gt; layout with:&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/assets/js/toc.js&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Then you can use it as it is said on the repository.&lt;/p&gt;
-
-&lt;h2 id=&quot;basic-usage-1&quot;&gt;Basic Usage&lt;/h2&gt;
-
-&lt;p&gt;The script requires jQuery. First, reference toc.js in templates where you would like to add the table of content. Then, create an HTML element wherever you want your table of contents to appear:&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;toc&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Then you put your post with titles and all like:&lt;/p&gt;
-
-&lt;div class=&quot;language-apiblueprint highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gu&quot;&gt;## Title&lt;/span&gt;
-&lt;span class=&quot;gu&quot;&gt;## Mid title 1&lt;/span&gt;
-This is text on page one
-&lt;span class=&quot;gu&quot;&gt;## Mid title 2&lt;/span&gt;
-This is text for page two
-&lt;span class=&quot;gu&quot;&gt;### Sub title 2.a&lt;/span&gt;
-Some more text
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Then at the end of your post, you call the .toc() function using:&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ready&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;#toc&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;how-it-would-look-like&quot;&gt;How it would look like&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/20642750/39189661-c22099f2-47a0-11e8-826e-2ec3ef4cc4f4.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
-
-&lt;script&gt;
-// toc.js 
-// Copied here for the example, can be placed in assets/js for real use in your template.
-// https://github.com/ghiculescu/jekyll-table-of-contents
-(function($){
-  $.fn.toc = function(options) {
-    var defaults = {
-      noBackToTopLinks: false,
-      title: '&lt;i&gt;Jump to...&lt;/i&gt;',
-      minimumHeaders: 3,
-      headers: 'h1, h2, h3, h4, h5, h6',
-      listType: 'ol', // values: [ol|ul]
-      showEffect: 'show', // values: [show|slideDown|fadeIn|none]
-      showSpeed: 'slow', // set to 0 to deactivate effect
-      classes: { list: '',
-                 item: ''
-               }
-    },
-    settings = $.extend(defaults, options);
-
-    function fixedEncodeURIComponent (str) {
-      return encodeURIComponent(str).replace(/[!'()*]/g, function(c) {
-        return '%' + c.charCodeAt(0).toString(16);
-      });
-    }
-
-    function createLink (header) {
-      var innerText = (header.textContent === undefined) ? header.innerText : header.textContent;
-      return &quot;&lt;a href='#&quot; + fixedEncodeURIComponent(header.id) + &quot;'&gt;&quot; + innerText + &quot;&lt;/a&gt;&quot;;
-    }
-
-    var headers = $(settings.headers).filter(function() {
-      // get all headers with an ID
-      var previousSiblingName = $(this).prev().attr( &quot;name&quot; );
-      if (!this.id &amp;&amp; previousSiblingName) {
-        this.id = $(this).attr( &quot;id&quot;, previousSiblingName.replace(/\./g, &quot;-&quot;) );
-      }
-      return this.id;
-    }), output = $(this);
-    if (!headers.length || headers.length &lt; settings.minimumHeaders || !output.length) {
-      $(this).hide();
-      return;
-    }
-
-    if (0 === settings.showSpeed) {
-      settings.showEffect = 'none';
-    }
-
-    var render = {
-      show: function() { output.hide().html(html).show(settings.showSpeed); },
-      slideDown: function() { output.hide().html(html).slideDown(settings.showSpeed); },
-      fadeIn: function() { output.hide().html(html).fadeIn(settings.showSpeed); },
-      none: function() { output.html(html); }
-    };
-
-    var get_level = function(ele) { return parseInt(ele.nodeName.replace(&quot;H&quot;, &quot;&quot;), 10); };
-    var highest_level = headers.map(function(_, ele) { return get_level(ele); }).get().sort()[0];
-    var return_to_top = '&lt;i class=&quot;icon-arrow-up back-to-top&quot;&gt; &lt;/i&gt;';
-
-    var level = get_level(headers[0]),
-      this_level,
-      html = settings.title + &quot; &lt;&quot; +settings.listType + &quot; class=\&quot;&quot; + settings.classes.list +&quot;\&quot;&gt;&quot;;
-    headers.on('click', function() {
-      if (!settings.noBackToTopLinks) {
-        window.location.hash = this.id;
-      }
-    })
-    .addClass('clickable-header')
-    .each(function(_, header) {
-      this_level = get_level(header);
-      if (!settings.noBackToTopLinks &amp;&amp; this_level === highest_level) {
-        $(header).addClass('top-level-header').after(return_to_top);
-      }
-      if (this_level === level) // same level as before; same indenting
-        html += &quot;&lt;li class=\&quot;&quot; + settings.classes.item + &quot;\&quot;&gt;&quot; + createLink(header);
-      else if (this_level &lt;= level){ // higher level than before; end parent ol
-        for(var i = this_level; i &lt; level; i++) {
-          html += &quot;&lt;/li&gt;&lt;/&quot;+settings.listType+&quot;&gt;&quot;
-        }
-        html += &quot;&lt;li class=\&quot;&quot; + settings.classes.item + &quot;\&quot;&gt;&quot; + createLink(header);
-      }
-      else if (this_level &gt; level) { // lower level than before; expand the previous to contain a ol
-        for(i = this_level; i &gt; level; i--) {
-          html += &quot;&lt;&quot; + settings.listType + &quot; class=\&quot;&quot; + settings.classes.list +&quot;\&quot;&gt;&quot; +
-                  &quot;&lt;li class=\&quot;&quot; + settings.classes.item + &quot;\&quot;&gt;&quot;
-        }
-        html += createLink(header);
-      }
-      level = this_level; // update for the next one
-    });
-    html += &quot;&lt;/&quot;+settings.listType+&quot;&gt;&quot;;
-    if (!settings.noBackToTopLinks) {
-      $(document).on('click', '.back-to-top', function() {
-        $(window).scrollTop(0);
-        window.location.hash = '';
-      });
-    }
-
-    render[settings.showEffect]();
-  };
-})(jQuery);
-&lt;/script&gt;
-
-&lt;!-- To be copied at the end of the post to render the table of content --&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-$(document).ready(function() {
-    $('#toc').toc();
-});
-&lt;/script&gt;</content><author><name>Sylhare</name></author><category term="toc.js" /><category term="kramdown" /><category term="Markdown" /><category term="Customization" /><summary type="html">Using Kramdown GFM</summary></entry><entry><title type="html">Tech Stuff example</title><link href="http://localhost:4000/blog/2013-11-02-tech-stuff-example" rel="alternate" type="text/html" title="Tech Stuff example" /><published>2013-11-02T00:00:00+09:00</published><updated>2013-11-02T00:00:00+09:00</updated><id>http://localhost:4000/blog/Tech-stuff-example</id><content type="html" xml:base="http://localhost:4000/blog/2013-11-02-tech-stuff-example">&lt;p&gt;Because if you put some code in your blog, you would at least make it:&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;Searchable&lt;/li&gt;
-  &lt;li&gt;Good looking&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;search-on-code&quot;&gt;Search on code&lt;/h2&gt;
-
-&lt;p&gt;Search should be working even for complicated escape symbols.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'s/\&quot;hostname\&quot;\:.*$/\&quot;hostname\&quot;\: \&quot;'&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$IPADDR&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'\&quot;\,/g'&lt;/span&gt; open-falcon/agent/config/cfg.json
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Or try searching for partial of a command, like this article should be returned when looking for “find grep”&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;find /etc &lt;span class=&quot;nt&quot;&gt;-type&lt;/span&gt; f &lt;span class=&quot;nt&quot;&gt;-exec&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'{}'&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;tr&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'.[:digit:]'&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'\n'&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'^[^.][^.]*\.[^.][^.]*\.[^.][^.]*\.[^.][^.]*$'&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;code-highlighting-examples&quot;&gt;Code highlighting examples&lt;/h2&gt;
-
-&lt;p&gt;Because you might put code in your blog post and you want to make sure 
-it will look good in here.
-And that the search function is working!&lt;/p&gt;
-
-&lt;h3 id=&quot;java&quot;&gt;Java&lt;/h3&gt;
-
-&lt;p&gt;java example&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;java.util.*&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;nd&quot;&gt;@Example&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Demo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;CONSTANT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;String&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Object&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;cm&quot;&gt;/**
-   * Creates a new demo.
-   * @param o The object to demonstrate.
-   */&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Demo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Object&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;o&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;CONSTANT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Other example of text&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;123&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;33&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;Demo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;demo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Demo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;demo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;o&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;toString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;())&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;html&quot;&gt;HTML&lt;/h3&gt;
-
-&lt;p&gt;html example&lt;/p&gt;
-
-&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;lang=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;en&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;content&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-        This is an example
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;javascript&quot;&gt;Javascript&lt;/h3&gt;
-
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cm&quot;&gt;/**
- * Does a thing
- */&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;helloWorld&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;param1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;param2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;something&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-  &lt;span class=&quot;c1&quot;&gt;// Do something&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;2.0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;something&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;Hello, world!&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;c1&quot;&gt;// @TODO comment&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;yaml&quot;&gt;YAML&lt;/h3&gt;
-
-&lt;p&gt;You can also render some yaml, like this &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;:&lt;/p&gt;
-
-&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;c1&quot;&gt;# Welcome to Jekyll!&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# This config file is meant for settings that affect your whole blog, values&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# which you are expected to set up once and rarely edit after that. If you find&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# yourself editing this file very often, consider using Jekyll's data files&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# feature for the data you need to update frequently.&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# This file, &quot;_config.yml&quot; is *NOT* reloaded automatically when you use&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# 'bundle exec jekyll serve'. If you change this file, please restart the server process.&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# Site settings&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# These are used to personalize your new site. If you look in the HTML files,&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# you will see them accessed via Type on Strap, , and so on.&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# You can create any custom variable you would like, and they will be accessible&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# in the templates via .&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# SITE CONFIGURATION&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;baseurl&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;/Type-on-Strap&quot;&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;https://sylhare.github.io&quot;&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# THEME-SPECIFIC CONFIGURATION&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Type on Strap&lt;/span&gt;                                    &lt;span class=&quot;c1&quot;&gt;# site's title&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;website&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;with&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;blog&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;posts&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;and&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;pages&quot;&lt;/span&gt;      &lt;span class=&quot;c1&quot;&gt;# used by search engines&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;avatar&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;assets/img/triangle.png&lt;/span&gt;                         &lt;span class=&quot;c1&quot;&gt;# Empty for no avatar in navbar&lt;/span&gt;
-&lt;span class=&quot;na&quot;&gt;favicon&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;assets/favicon.ico&lt;/span&gt;                             &lt;span class=&quot;c1&quot;&gt;# Icon displayed in the tab&lt;/span&gt;
-
-&lt;span class=&quot;na&quot;&gt;remote_theme&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;sylhare/Type-on-Strap&lt;/span&gt;                     &lt;span class=&quot;c1&quot;&gt;# If using as a remote_theme in github&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="Test" /><category term="Markdown" /><summary type="html">Because if you put some code in your blog, you would at least make it:</summary></entry><entry><title type="html">Blogging with title</title><link href="http://localhost:4000/blog/2013-10-18-blogging-with-title" rel="alternate" type="text/html" title="Blogging with title" /><published>2013-10-18T00:00:00+09:00</published><updated>2013-10-18T00:00:00+09:00</updated><id>http://localhost:4000/blog/blogging-with-title</id><content type="html" xml:base="http://localhost:4000/blog/2013-10-18-blogging-with-title">&lt;h1 id=&quot;i-am-a-big-title&quot;&gt;I am a BIG title&lt;/h1&gt;
-
-&lt;p&gt;This is a very tiny tiny post with less than 250 letters.&lt;/p&gt;</content><author><name></name></author><category term="Test" /><category term="Ipsum" /><category term="Markdown" /><category term="Portfolio" /><summary type="html">I am a BIG title</summary></entry></feed>
+&lt;/blockquote&gt;</content><author><name>Sylhare</name></author><category term="Test" /><category term="Color" /><category term="Markdown" /><summary type="html">What a colorful post! This is an idea that came from xukimseven/HardCandy-Jekyll looking at this cheerful and colorful them, I wanted to enable something similar for mine. You can go fork and star hers too! 😉</summary></entry></feed>

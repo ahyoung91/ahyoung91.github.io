@@ -2245,9 +2245,9 @@ html { background: #fff; }
 
 ::-moz-selection { background: #D4D4D4; }
 
-body { color: #262626; font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; font-size: 1.25em; word-wrap: break-word; }
+body { color: #262626; font-family: "Noto Sans", sans-serif; font-size: 1.25em; word-wrap: break-word; }
 
-h1, h2, h3, h4, h5, h6 { font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; line-height: 1.3; margin: 0.67em 0; }
+h1, h2, h3, h4, h5, h6 { font-family: "Noto Sans", sans-serif; line-height: 1.3; margin: 0.67em 0; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #262626; }
 
@@ -2400,7 +2400,7 @@ footer { padding-top: 0; }
 
 @media screen and (max-width: 576px) { .call-out { background-size: 400% auto; } }
 
-.call-out p, .call-out a, .call-out li, .call-out h1, .call-out h2, .call-out h3, .call-out h4, .call-out h5 { font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; }
+.call-out p, .call-out a, .call-out li, .call-out h1, .call-out h2, .call-out h3, .call-out h4, .call-out h5 { font-family: "Noto Sans", sans-serif; }
 
 .call-out p:last-child { margin-bottom: 0; }
 
@@ -2511,7 +2511,7 @@ h1.title { padding: 0.5em 0; }
 
 .site-header .avatar { height: 3em; width: 3em; float: left; margin-top: -13px; border-radius: 0.2em; margin-right: 0.5em; padding: 10px 10px; }
 
-.site-header .site-title { float: left; font-weight: bold; font-family: "Source Sans Pro", Helvetica, Arial, sans-serif; font-size: 1.3em; }
+.site-header .site-title { float: left; font-weight: bold; font-family: "Noto Sans", sans-serif; font-size: 1.3em; }
 
 .site-header nav { list-style: none; margin: 0; padding: 0; }
 
