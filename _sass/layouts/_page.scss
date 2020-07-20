@@ -3,18 +3,21 @@
 }
 
 h1.title {
-  @extend .header-txt-shadow;
-  padding: 0.5em 0;
+  padding: 2em 0 0;
+  color: #333;
+  font-size: 45px;
+  font-weight: 600;
 }
 
-.subtitle {
-  font-weight: normal;
+h2.subtitle {
+  font-weight: 500;
   margin-top: 5px;
-  text-shadow: 1px 1px 2px $text-shadow;
+  color: #ddd;
+  font-size: 20px;
+  // text-shadow: 1px 1px 2px $text-shadow;
 }
 
 //Shared css in _post.scss
-
 
 /* --- Aligner --- */
 /* within page/posts */

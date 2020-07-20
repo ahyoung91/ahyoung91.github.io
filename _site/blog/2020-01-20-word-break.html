@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<!--
+    Type on Strap jekyll theme v2.2.4
+    Copyright 2016-2019 Sylhare
+    Theme free for personal and commercial use under the MIT license
+    https://github.com/sylhare/Type-on-Strap/blob/master/LICENSE
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Main JS (navbar.js, katex_init.js and masonry_init.js)-->
+    <script defer src="/assets/js/main.min.js"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="http://localhost:4000/blog/2020-01-20-word-break">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="AY Portfolio" href="http://localhost:4000/feed.xml"/>
+    
+    
+
+    <!-- KaTeX 0.8.3 -->
+    <!-- if you have any issue check https://github.com/KaTeX/KaTeX -->
+    
+    <script src="/assets/js/vendor/katex.min.js"></script>
+    
+
+    <!-- Google Analytics / Cookie Consent -->
+    <script>
+      const cookieName = 'cookie-notice-dismissed-http://localhost:4000';
+      const isCookieConsent = 'false';
+      const analyticsName = '';
+    </script>
+
+    
+    
+
+    <!-- seo tags -->
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Word break | AY Portfolio</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Word break" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="작업을 하다보면 가볍게 이해한 속성을 바탕으로 관습적으로 사용하는 속성들이 있다. 그 중 word-break 속성에 대해 조금 더 명확하게 알고 넘어가는게 좋겠다고 생각했다. word-break란 단어의 분리를 어떻게 할 것인지 결정한다. 중요하게 기억할 큰이슈들은 한 단어의 넓이가 자신을 감싸고 있는 tag의 width보다 클경우에 생긴다는 점이다. 그리고 여기서 영어와 CJK(Chinese/Japanese/Korean text - 이하 한글로 표현) 는 word-break의 적용이 다른 value가 있다는 점이다." />
+<meta property="og:description" content="작업을 하다보면 가볍게 이해한 속성을 바탕으로 관습적으로 사용하는 속성들이 있다. 그 중 word-break 속성에 대해 조금 더 명확하게 알고 넘어가는게 좋겠다고 생각했다. word-break란 단어의 분리를 어떻게 할 것인지 결정한다. 중요하게 기억할 큰이슈들은 한 단어의 넓이가 자신을 감싸고 있는 tag의 width보다 클경우에 생긴다는 점이다. 그리고 여기서 영어와 CJK(Chinese/Japanese/Korean text - 이하 한글로 표현) 는 word-break의 적용이 다른 value가 있다는 점이다." />
+<link rel="canonical" href="http://localhost:4000/blog/2020-01-20-word-break" />
+<meta property="og:url" content="http://localhost:4000/blog/2020-01-20-word-break" />
+<meta property="og:site_name" content="AY Portfolio" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-01-20T00:00:00+09:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"http://localhost:4000/blog/2020-01-20-word-break","headline":"Word break","dateModified":"2020-01-20T00:00:00+09:00","datePublished":"2020-01-20T00:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2020-01-20-word-break"},"description":"작업을 하다보면 가볍게 이해한 속성을 바탕으로 관습적으로 사용하는 속성들이 있다. 그 중 word-break 속성에 대해 조금 더 명확하게 알고 넘어가는게 좋겠다고 생각했다. word-break란 단어의 분리를 어떻게 할 것인지 결정한다. 중요하게 기억할 큰이슈들은 한 단어의 넓이가 자신을 감싸고 있는 tag의 width보다 클경우에 생긴다는 점이다. 그리고 여기서 영어와 CJK(Chinese/Japanese/Korean text - 이하 한글로 표현) 는 word-break의 적용이 다른 value가 있다는 점이다.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta property="og:image" content="http://localhost:4000/assets/img/pexels/triangular.jpeg">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:title" content="Word break
+">
+    <meta name="twitter:description" content="작업을 하다보면 가볍게 이해한 속성을 바탕으로 관습적으로 사용하는 속성들이 있다.그 중 word-break 속성에 대해 조금 더 명확하게 알고 넘어가는게 좋겠다고 생각했다.word-break란 단어의 분리를 어떻게 할 것인지 결정한다.중요하게 기억할 큰이슈들은 한 단어의 넓이가 자...">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://localhost:4000/assets/img/pexels/triangular.jpeg">
+</head>
+
+  <body>
+    <header class="site-header">
+
+    <!-- Logo and title -->
+	<div class="branding">
+        
+		<a href="/">
+			<img alt="logo img" class="avatar" src="/assets/img/logo.png" />
+		</a>
+        
+
+		<h1 class="site-title">
+			<a aria-label="AY Portfolio" href="/">
+        AY Portfolio
+      </a>
+		</h1>
+	</div>
+
+    <!-- Toggle menu -->
+    <nav class="clear">
+    <a aria-label="pull" id="pull" class="toggle" href="#">
+    <i class="fa fa-bars fa-lg"></i>
+    </a>
+
+    <!-- Menu -->
+    <ul class="hide">
+        
+
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="About" title="About" href="/about/">
+                     About 
+                </a>
+            </li>
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Blog" title="Blog" href="/blog/">
+                     Blog 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Portfolio" title="Portfolio" href="/portfolio/">
+                     Portfolio 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Search" title="Search" href="/search/">
+                     <i class="fa fa-search" aria-hidden="true"></i>
+                    
+                </a>
+            </li>
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Tags" title="Tags" href="/tags/">
+                     <i class="fa fa-tags" aria-hidden="true"></i>
+                    
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+    </ul>
+
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header id="main" style="">
+    <div class="title-padder">
+      
+      <h1 id="Word+break%0A" class="title">Word break
+</h1>
+      
+
+
+<div class="post-info">
+    <p class="meta">
+      January 20, 2020
+    </p></div>
+
+      
+    </div>
+  </header>
+
+  <section class="post-content">
+  
+      <p>작업을 하다보면 가볍게 이해한 속성을 바탕으로 관습적으로 사용하는 속성들이 있다.
+그 중 word-break 속성에 대해 조금 더 명확하게 알고 넘어가는게 좋겠다고 생각했다.
+word-break란 단어의 분리를 어떻게 할 것인지 결정한다.
+중요하게 기억할 큰이슈들은 한 단어의 넓이가 자신을 감싸고 있는 tag의 width보다 클경우에 생긴다는 점이다.
+그리고 여기서 영어와 CJK(Chinese/Japanese/Korean text - 이하 한글로 표현) 는 word-break의 적용이 다른 value가 있다는 점이다.</p>
+
+<hr />
+
+<h2 id="word-break-normal">word-break: normal;</h2>
+
+<p>한글은 tag의 width 크기보다 넓은 한개의 단어일경우에도 글자 단위로 줄바꿈해준다.
+하지만 영어의 경우에는 넘쳐서 디자인이 깨지는 형태로 표현된다.</p>
+
+<h2 id="word-break-break-word">word-break: break-word;</h2>
+
+<p>영어에는 잘 적용이되어 단어별로 줄바꿈이 된다. 하지만 한글에는 실제적으로 normal로 적용이 된다. 그리하여 글자 단위로 줄바꿈이 된다. 그리하여 넘치는 이슈가 생길일은 없지만 한글의 경우 단어별로 끊어주지 않게되어 이쁘지 않게 표현된다.</p>
+
+<h2 id="word-break-keep-all">word-break: keep-all;</h2>
+
+<p>한글과 영어 모두 길이가 긴 단어의 경우 container를 넘치게 되고 줄바꿈되지 않는다. 디자인을 깨뜨리는 이슈를 발생시키게 된다.</p>
+
+<h2 id="결론">결론</h2>
+<iframe height="265" style="width: 100%;" scrolling="no" title="MWYxZmQ" src="https://codepen.io/ahyoung/embed/MWYxZmQ?height=265&amp;theme-id=default&amp;default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+    See the Pen <a href="https://codepen.io/ahyoung/pen/MWYxZmQ">MWYxZmQ</a> by ahyoung
+    (<a href="https://codepen.io/ahyoung">@ahyoung</a>) on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+<p>위의 코드펜에서 주석을 풀면서 해당 속성을 확인해보자.</p>
+
+<p>word-break와 같은 텍스트에 관한 기본값이 보통 inherit으로 설정되어 있다. 그래서 상위태그에 속성을 주면 상속이 된다.</p>
+
+<p>body정도에 word-break: break-word; 를 주어 영어는 단어별로 줄바꿈될테고, 한글인경우 필요한부분에 keep-all 을 따로 줄수있겠다.</p>
+
+<p>한글 문장이 대부분인 사이트여서 word-break속성을 반복적으로 주기싫다면, word-break: keep-all;을 body에 주고 한단어가 넘치는 이슈가 발생하는 곳에 word-break; 를 각각 줄수있겠다.</p>
+
+    
+  </section>
+
+  <!-- Social media shares -->
+  
+
+<div class="share-buttons">
+    <ul class="share-buttons">
+        <div class="meta">Share</div>
+        
+        <li>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fblog%2F2020-01-20-word-break" target="_blank" title=" Facebook">
+			<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+			<span class="sr-only">Share on Facebook</span>
+		</a>
+        </li>
+         
+        <li>
+            <a href="https://twitter.com/intent/tweet?text=Word+break%0A%20http%3A%2F%2Flocalhost%3A4000%2Fblog%2F2020-01-20-word-break" target="_blank" title="">
+			<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+			<span class="sr-only">Tweet</span>
+		</a>
+        </li>
+            
+        <li>
+            <a href="http://www.reddit.com/submit?url=http://localhost:4000/blog/2020-01-20-word-break&title=Word+break%0A%20%7C%20AY+Portfolio" target="_blank" title=" Reddit">
+			<i class="fa fa-reddit-square fa-2x" aria-hidden="true"></i>
+			<span class="sr-only">Share on Reddit</span>
+		</a>
+        </li>
+           
+        <li>
+            <a href="mailto:?subject=Word+break%0A%20%7C%20AY+Portfolio&body=:%20http://localhost:4000/blog/2020-01-20-word-break" target="_blank" title="">
+			<i class="fa fa-envelope-square fa-2x" aria-hidden="true"></i>
+			<span class="sr-only">Email</span>
+		</a>
+        </li>
+        
+    </ul>
+</div>
+
+
+
+
+   <!-- Tag list -->
+  
+  
+
+
+<footer>
+  <div class="tag-list">
+    
+      <div class="meta">Tags</div>
+    
+
+    
+    <a class="button" href="/tags#break-word">
+      <p><i class="fa fa-tag fa-fw"></i> break-word</p>
+    </a>
+    
+    <a class="button" href="/tags#keep-all">
+      <p><i class="fa fa-tag fa-fw"></i> keep-all</p>
+    </a>
+    
+    <a class="button" href="/tags#normal">
+      <p><i class="fa fa-tag fa-fw"></i> normal</p>
+    </a>
+    
+    <a class="button" href="/tags#word-break">
+      <p><i class="fa fa-tag fa-fw"></i> word-break</p>
+    </a>
+    
+  </div>
+</footer>
+
+
+</article>
+
+<!-- Disqus -->
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+    
+    <div id="previous-post">
+        <a alt="SASS
+" href="/blog/2020-01-21-sass">
+            <p>Previous post</p>
+            SASS
+
+        </a>
+    </div>
+    
+
+    
+    <div id="next-post">
+        <a alt="Position
+" href="/blog/2020-01-15-position">
+            <p>Next post</p>
+            Position
+
+        </a>
+    </div>
+    
+</div>
+
+
+
+<!-- To change color of links in the page -->
+<style>
+  
+
+  header#main {
+    background-repeat:no-repeat;
+  
+  }
+</style>
+
+    </div>
+    <footer class="site-footer">
+    <p class="text">
+        Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+</p>
+            <div class="footer-icons">
+                <ul>
+                <!-- Social icons from Font Awesome, if enabled -->
+                
+<li>
+    <a feed.xml href="feed.xml"
+       title="Follow RSS feed">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+        </span>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+    <a href="https://github.com/sylhare" title="Follow on GitHub">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+        </span>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </ul>
+            </div>
+</footer>
+
+
+
+  </body>
+</html>

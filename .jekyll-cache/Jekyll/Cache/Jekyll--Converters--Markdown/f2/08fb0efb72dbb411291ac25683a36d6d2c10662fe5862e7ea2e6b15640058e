@@ -1,0 +1,23 @@
+I"�<p><img src="/assets/img/portfolio/thumb_sinsago.jpg" alt="image" /></p>
+
+<p>좋은책 신사고, 쎈, 스마트쎈 등 사이트 유지보수 및 이벤트 페이지 작업을 진행했습니다.</p>
+
+<p>이벤트 페이지에서는 CSS3의 애니메이션을 주로 이용하여 작업하였고 그 외 사이트 유지보수에서는 웹 접근성을 고려하여 마크업 하였습니다.</p>
+
+<hr />
+<ul>
+  <li><a href="https://www.sinsago.co.kr/main/main.aspx" target="_blank"><strong>URL</strong></a></li>
+  <li>프로젝트 기간 : 2018/05 ~ 2019/05</li>
+  <li>프로젝트 유형 : 유지보수</li>
+  <li>크로스브라우징
+    <ul>
+      <li>PC : 익스(^8), 크롬, 엣지, 사파리, 파이어폭스, 오페라</li>
+      <li>MOBILE : 안드로이드, ios 최신</li>
+    </ul>
+  </li>
+  <li>기여도 : 100%</li>
+  <li>소스코드관리 : git</li>
+  <li>사용 언어 : HTML5, CSS3, javaScript</li>
+</ul>
+
+:ET

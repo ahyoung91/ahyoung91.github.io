@@ -1,0 +1,84 @@
+I"E<!-- Portfolio Grid Section -->
+
+<div class="portfolio-grid">
+    
+    <div class="portfolio-cell">
+        <a class="portfolio-link" data-keyboard="true" href="/portfolio/0-naver-talk">
+            <div class="caption" title="네이버 톡톡">
+                <div class="caption-content">
+                    <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+            </div>
+            <img alt="" class="" src="/assets/img/portfolio/thumb_talktalk.jpg" />
+        </a>
+    </div>
+    
+    <div class="portfolio-cell">
+        <a class="portfolio-link" data-keyboard="true" href="/portfolio/1-naver-partner">
+            <div class="caption" title="네이버 파트너센터">
+                <div class="caption-content">
+                    <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+            </div>
+            <img alt="" class="" src="/assets/img/portfolio/thumb_talkpartner.jpg" />
+        </a>
+    </div>
+    
+    <div class="portfolio-cell">
+        <a class="portfolio-link" data-keyboard="true" href="/portfolio/2-naver-pasta">
+            <div class="caption" title="네이버 파스타">
+                <div class="caption-content">
+                    <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+            </div>
+            <img alt="" class="" src="/assets/img/portfolio/thumb_pasta.jpg" />
+        </a>
+    </div>
+    
+    <div class="portfolio-cell">
+        <a class="portfolio-link" data-keyboard="true" href="/portfolio/3-naver-yobi">
+            <div class="caption" title="네이버 요비">
+                <div class="caption-content">
+                    <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+            </div>
+            <img alt="" class="" src="/assets/img/portfolio/thumb_yobi.jpg" />
+        </a>
+    </div>
+    
+    <div class="portfolio-cell">
+        <a class="portfolio-link" data-keyboard="true" href="/portfolio/4-sinsago">
+            <div class="caption" title="좋은책 신사고">
+                <div class="caption-content">
+                    <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+            </div>
+            <img alt="" class="" src="/assets/img/portfolio/thumb_sinsago.jpg" />
+        </a>
+    </div>
+    
+    <div class="portfolio-cell">
+        <a class="portfolio-link" data-keyboard="true" href="/portfolio/5-megastudy">
+            <div class="caption" title="메가스터디">
+                <div class="caption-content">
+                    <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+            </div>
+            <img alt="" class="" src="/assets/img/portfolio/thumb_mega.jpg" />
+        </a>
+    </div>
+    
+    <div class="portfolio-cell">
+        <a class="portfolio-link" data-keyboard="true" href="/portfolio/6-storyjam">
+            <div class="caption" title="스토리잼">
+                <div class="caption-content">
+                    <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+            </div>
+            <img alt="" class="" src="/assets/img/portfolio/storyjam.png" />
+        </a>
+    </div>
+    
+</div>
+
+:ET

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<!--
+    Type on Strap jekyll theme v2.2.4
+    Copyright 2016-2019 Sylhare
+    Theme free for personal and commercial use under the MIT license
+    https://github.com/sylhare/Type-on-Strap/blob/master/LICENSE
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Main JS (navbar.js, katex_init.js and masonry_init.js)-->
+    <script defer src="/assets/js/main.min.js"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="http://localhost:4000/blog/2020-01-21-sass">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="AY Portfolio" href="http://localhost:4000/feed.xml"/>
+    
+    
+
+    <!-- KaTeX 0.8.3 -->
+    <!-- if you have any issue check https://github.com/KaTeX/KaTeX -->
+    
+    <script src="/assets/js/vendor/katex.min.js"></script>
+    
+
+    <!-- Google Analytics / Cookie Consent -->
+    <script>
+      const cookieName = 'cookie-notice-dismissed-http://localhost:4000';
+      const isCookieConsent = 'false';
+      const analyticsName = '';
+    </script>
+
+    
+    
+
+    <!-- seo tags -->
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>SASS | AY Portfolio</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="SASS" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="SASS는 css를 만들어주는 언어로 자바스크립트처럼 특정 속성(ex. color, margin, width 등)의 값을 변수로 선언하여 필요한 곳에 선언된 변수를 적용할 수도 있고, 반복되는 코드를 한번의 선언으로 여러곳에 재사용할 수 있도록 하는 전처리기이다." />
+<meta property="og:description" content="SASS는 css를 만들어주는 언어로 자바스크립트처럼 특정 속성(ex. color, margin, width 등)의 값을 변수로 선언하여 필요한 곳에 선언된 변수를 적용할 수도 있고, 반복되는 코드를 한번의 선언으로 여러곳에 재사용할 수 있도록 하는 전처리기이다." />
+<link rel="canonical" href="http://localhost:4000/blog/2020-01-21-sass" />
+<meta property="og:url" content="http://localhost:4000/blog/2020-01-21-sass" />
+<meta property="og:site_name" content="AY Portfolio" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-01-21T00:00:00+09:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"http://localhost:4000/blog/2020-01-21-sass","headline":"SASS","dateModified":"2020-01-21T00:00:00+09:00","datePublished":"2020-01-21T00:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2020-01-21-sass"},"description":"SASS는 css를 만들어주는 언어로 자바스크립트처럼 특정 속성(ex. color, margin, width 등)의 값을 변수로 선언하여 필요한 곳에 선언된 변수를 적용할 수도 있고, 반복되는 코드를 한번의 선언으로 여러곳에 재사용할 수 있도록 하는 전처리기이다.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta property="og:image" content="http://localhost:4000/assets/img/pexels/triangular.jpeg">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:title" content="SASS
+">
+    <meta name="twitter:description" content="SASS는 css를 만들어주는 언어로 자바스크립트처럼 특정 속성(ex. color, margin, width 등)의 값을 변수로 선언하여 필요한 곳에 선언된 변수를 적용할 수도 있고, 반복되는 코드를 한번의 선언으로 여러곳에 재사용할 수 있도록 하는 전처리기이다.왜 css가 아닌 ...">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://localhost:4000/assets/img/pexels/triangular.jpeg">
+</head>
+
+  <body>
+    <header class="site-header">
+
+    <!-- Logo and title -->
+	<div class="branding">
+        
+		<a href="/">
+			<img alt="logo img" class="avatar" src="/assets/img/logo.png" />
+		</a>
+        
+
+		<h1 class="site-title">
+			<a aria-label="AY Portfolio" href="/">
+        AY Portfolio
+      </a>
+		</h1>
+	</div>
+
+    <!-- Toggle menu -->
+    <nav class="clear">
+    <a aria-label="pull" id="pull" class="toggle" href="#">
+    <i class="fa fa-bars fa-lg"></i>
+    </a>
+
+    <!-- Menu -->
+    <ul class="hide">
+        
+
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="About" title="About" href="/about/">
+                     About 
+                </a>
+            </li>
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Blog" title="Blog" href="/blog/">
+                     Blog 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Portfolio" title="Portfolio" href="/portfolio/">
+                     Portfolio 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Search" title="Search" href="/search/">
+                     <i class="fa fa-search" aria-hidden="true"></i>
+                    
+                </a>
+            </li>
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Tags" title="Tags" href="/tags/">
+                     <i class="fa fa-tags" aria-hidden="true"></i>
+                    
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+    </ul>
+
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header id="main" style="">
+    <div class="title-padder">
+      
+      <h1 id="SASS%0A" class="title">SASS
+</h1>
+      
+
+
+<div class="post-info">
+    <p class="meta">
+      January 21, 2020
+    </p></div>
+
+      
+    </div>
+  </header>
+
+  <section class="post-content">
+  
+      <p>SASS는 css를 만들어주는 언어로 자바스크립트처럼 특정 속성(ex. color, margin, width 등)의 값을 변수로 선언하여 필요한 곳에 선언된 변수를 적용할 수도 있고, 반복되는 코드를 한번의 선언으로 여러곳에 재사용할 수 있도록 하는 전처리기이다.</p>
+
+<p>왜 css가 아닌 sass를 사용하는가? 라는 의문을 가질 수 있다.
+하드 코딩을 하다보면 사실 html 마크업 보다는 css를 작성하는데 훨씬 더 많은 시간을 할애한다.
+모든 레이아웃을 css로 제어해야 하기 때문이다.
+그러다보면 여러번 반복되는 속성들을 사용하기도 하고, 다른 곳에서 작성했던 속성을 다시 또 작성하는 등 번거로운 일들이 발생한다.
+그럴때에 
+<strong>scss를 사용하면 생산적인 코드를 작성</strong>
+할 수 있다.</p>
+
+<hr />
+
+<h2 id="실제-프로젝트에-사용-된-sass">실제 프로젝트에 사용 된 SASS</h2>
+
+<h3 id="mixin-include">@mixin, @include</h3>
+<p>실제 m.talk에서 사용된 코드이다.
+자주 쓰는 속성(한줄 말줄임, 2,3줄 이상의 멀티 말줄임 등)을 
+<strong>@mixin으로 정의한 뒤 @include</strong>
+로 불러내어 사용할 수 있다.
+아래 코드를 보면 이해가 쉽게 될 것이다.</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">Input</span>
+
+<span class="o">&lt;</span><span class="nx">div</span><span class="o">&gt;</span>
+  <span class="o">&lt;</span><span class="nx">p</span> <span class="kd">class</span><span class="o">=</span><span class="dl">"</span><span class="s2">test</span><span class="dl">"</span><span class="o">&gt;</span>
+    <span class="nx">wwwWWWWWWWWwwwwwwwwwwwwwwww</span>
+  <span class="o">&lt;</span><span class="sr">/p</span><span class="err">&gt;
+</span><span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>
+<span class="p">@</span><span class="nd">mixin</span> <span class="nx">ellipsis</span> <span class="p">{</span>
+    <span class="nl">overflow</span><span class="p">:</span> <span class="nx">hidden</span><span class="p">;</span>
+    <span class="nx">text</span><span class="o">-</span><span class="nx">overflow</span><span class="p">:</span> <span class="nx">ellipsis</span><span class="p">;</span>
+    <span class="nx">white</span><span class="o">-</span><span class="nx">space</span><span class="p">:</span> <span class="nx">nowrap</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">@</span><span class="nd">mixin</span> <span class="nx">ellipsisMulti</span><span class="p">(</span><span class="nx">$line_num</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="o">-</span><span class="nx">webkit</span><span class="o">-</span><span class="nx">box</span><span class="p">;</span>
+    <span class="nl">overflow</span><span class="p">:</span> <span class="nx">hidden</span><span class="p">;</span>
+    <span class="nx">text</span><span class="o">-</span><span class="nx">overflow</span><span class="p">:</span> <span class="nx">ellipsis</span><span class="p">;</span>
+    <span class="nx">word</span><span class="o">-</span><span class="k">break</span><span class="p">:</span> <span class="k">break</span><span class="o">-</span><span class="nx">all</span><span class="p">;</span>
+    <span class="nx">word</span><span class="o">-</span><span class="nx">wrap</span><span class="p">:</span> <span class="k">break</span><span class="o">-</span><span class="nx">word</span><span class="p">;</span>
+    <span class="o">-</span><span class="nx">webkit</span><span class="o">-</span><span class="nx">line</span><span class="o">-</span><span class="nx">clamp</span><span class="p">:</span> <span class="nx">$line_num</span><span class="p">;</span>
+    <span class="o">-</span><span class="nx">webkit</span><span class="o">-</span><span class="nx">box</span><span class="o">-</span><span class="nx">orient</span><span class="p">:</span> <span class="nx">vertical</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nx">test</span> <span class="p">{</span>
+  <span class="p">@</span><span class="nd">include</span> <span class="nx">ellipsisMulti</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+
+  <span class="nx">max</span><span class="o">-</span><span class="nx">height</span><span class="p">:</span> <span class="mi">18</span><span class="nx">px</span><span class="p">;</span>
+  <span class="nx">line</span><span class="o">-</span><span class="nx">height</span><span class="p">:</span> <span class="mi">18</span><span class="nx">px</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">Output</span>
+
+<span class="p">.</span><span class="nx">test</span> <span class="p">{</span>
+    <span class="nl">display</span><span class="p">:</span> <span class="o">-</span><span class="nx">webkit</span><span class="o">-</span><span class="nx">box</span><span class="p">;</span>
+    <span class="nl">overflow</span><span class="p">:</span> <span class="nx">hidden</span><span class="p">;</span>
+    <span class="nx">text</span><span class="o">-</span><span class="nx">overflow</span><span class="p">:</span> <span class="nx">ellipsis</span><span class="p">;</span>
+    <span class="nx">word</span><span class="o">-</span><span class="k">break</span><span class="p">:</span> <span class="k">break</span><span class="o">-</span><span class="nx">all</span><span class="p">;</span>
+    <span class="nx">word</span><span class="o">-</span><span class="nx">wrap</span><span class="p">:</span> <span class="k">break</span><span class="o">-</span><span class="nx">word</span><span class="p">;</span>
+    <span class="o">-</span><span class="nx">webkit</span><span class="o">-</span><span class="nx">line</span><span class="o">-</span><span class="nx">clamp</span><span class="p">:</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="o">-</span><span class="nx">webkit</span><span class="o">-</span><span class="nx">box</span><span class="o">-</span><span class="nx">orient</span><span class="p">:</span> <span class="nx">vertical</span><span class="p">;</span>
+    <span class="nx">max</span><span class="o">-</span><span class="nx">height</span><span class="p">:</span> <span class="mi">18</span><span class="nx">px</span><span class="p">;</span>
+    <span class="nx">line</span><span class="o">-</span><span class="nx">height</span><span class="p">:</span> <span class="mi">18</span><span class="nx">px</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<h3 id="변수설정">변수설정</h3>
+
+<p><strong>자주 사용되는 컬러</strong>
+나, <strong>텍스트를 변수로 설정</strong>
+해두면 유지보수에 용이하다. 실제 네이버 파트너센터에 사용 된 코드이다.</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">Input</span>
+
+<span class="o">&lt;</span><span class="nx">div</span> <span class="kd">class</span><span class="o">=</span><span class="dl">"</span><span class="s2">test</span><span class="dl">"</span><span class="o">&gt;</span>
+  <span class="nx">자주</span> <span class="nx">쓰이는</span> <span class="nx">컬러를</span> <span class="nx">변수로</span> <span class="nx">설정해줌</span><span class="p">.</span>
+<span class="o">&lt;</span><span class="sr">/div</span><span class="err">&gt;
+</span>
+<span class="nx">$point_blue</span> <span class="p">:</span> <span class="err">#</span><span class="mi">43</span><span class="nx">a0fa</span><span class="p">;</span> <span class="c1">// 사용처 : lnb</span>
+<span class="nl">$point_green</span> <span class="p">:</span> <span class="err">#</span><span class="mi">02</span><span class="nx">b336</span><span class="p">;</span>
+<span class="nl">$point_lightgreen</span> <span class="p">:</span> <span class="err">#</span><span class="mi">0</span><span class="nx">abe16</span><span class="p">;</span>
+<span class="nl">$point_lightgreen2</span> <span class="p">:</span> <span class="err">#</span><span class="mi">00</span><span class="nx">c73c</span><span class="p">;</span>
+<span class="nl">$point_red</span> <span class="p">:</span> <span class="err">#</span><span class="nx">fc4c4e</span><span class="p">;</span>
+<span class="nl">$main_black</span> <span class="p">:</span> <span class="err">#</span><span class="mi">181</span><span class="nx">b1e</span><span class="p">;</span> <span class="c1">// 주로 페이지 타이틀 쪽에서 사용하는 블랙</span>
+<span class="nl">$black</span> <span class="p">:</span> <span class="err">#</span><span class="mi">3</span><span class="nx">e4146</span><span class="p">;</span> <span class="c1">// 본문타이틀 + 본문내용 에서 사용하는 블랙</span>
+<span class="nl">$point_gray</span> <span class="p">:</span> <span class="err">#</span><span class="mi">80868</span><span class="nx">e</span><span class="p">;</span> <span class="c1">// 주로 서브텍스트에서 사용하는 그레이</span>
+<span class="nl">$point_lgray</span> <span class="p">:</span> <span class="err">#</span><span class="nx">abb3ba</span><span class="p">;</span> <span class="c1">// 주로 placeholder,  미설정텍스트에 사용되는 밝은그레이</span>
+
+<span class="p">.</span><span class="nx">test</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="nx">$point_blue</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">Output</span>
+
+<span class="p">.</span><span class="nx">test</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="err">#</span><span class="mi">43</span><span class="nx">a0fa</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<h3 id="gulp">Gulp</h3>
+
+<p>빌드 자동화 도구인 Gulp를 사용하면 명령어를 통해 보다 쉽게 sass를 사용할 수 있다.</p>
+
+<p>여러 task들을 정의하고 명령어를 통해 task들을 실행할 수 있다.
+gulpfile.js 파일을 생성하여 아래와 같은 코드를 넣어서 실제 talk,m.talk에서 사용했다.</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// ---------------------------------</span>
+<span class="c1">// Tasks</span>
+<span class="c1">// ---------------------------------</span>
+<span class="c1">// task.bs</span>
+<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="dl">'</span><span class="s1">bs</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+	<span class="nx">browserSync</span><span class="p">({</span>
+		<span class="na">files</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">*.html</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">*.php</span><span class="dl">'</span><span class="p">],</span>
+		<span class="na">proxy</span><span class="p">:</span> <span class="dl">'</span><span class="s1">localhost:80</span><span class="dl">'</span><span class="p">,</span>
+		<span class="na">open</span><span class="p">:</span> <span class="dl">'</span><span class="s1">external</span><span class="dl">'</span><span class="p">,</span>
+		<span class="na">logPrefix</span><span class="p">:</span> <span class="dl">"</span><span class="s2">bs</span><span class="dl">"</span>
+	<span class="p">});</span>
+
+	<span class="nx">gulp</span><span class="p">.</span><span class="nx">watch</span><span class="p">([</span><span class="dl">'</span><span class="s1">src/scss/**/*.scss</span><span class="dl">'</span><span class="p">],</span> <span class="p">[</span><span class="dl">'</span><span class="s1">sass</span><span class="dl">'</span><span class="p">]);</span>
+	<span class="nx">gulp</span><span class="p">.</span><span class="nx">watch</span><span class="p">([</span><span class="dl">'</span><span class="s1">src/**/*.html</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">src/css/**/*.css</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">src/**/*.php</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">src/js/**/*.js</span><span class="dl">'</span><span class="p">]).</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">change</span><span class="dl">'</span><span class="p">,</span> <span class="nx">browserSync</span><span class="p">.</span><span class="nx">reload</span><span class="p">);</span>
+<span class="p">});</span></code></pre></figure>
+
+<p>위 코드를 설명하자면 문서파일을 수정하고 실제 화면을 새로고침 할 필요없이 자동으로 새로고침 될 수 있게 했다.</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// ---------------------------------</span>
+<span class="c1">// Tasks</span>
+<span class="c1">// ---------------------------------</span>
+<span class="c1">// task.sass</span>
+<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="dl">'</span><span class="s1">sass</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+	<span class="k">return</span> <span class="nx">gulp</span><span class="p">.</span><span class="nx">src</span><span class="p">(</span><span class="dl">'</span><span class="s1">src/scss/**/*.scss</span><span class="dl">'</span><span class="p">)</span>
+		<span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">sourcemaps</span><span class="p">.</span><span class="nx">init</span><span class="p">())</span>
+		<span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">sass</span><span class="p">({</span>
+			<span class="na">outputStyle</span><span class="p">:</span> <span class="dl">'</span><span class="s1">expanded</span><span class="dl">'</span><span class="p">,</span> <span class="c1">// nested, expanded, compact, compressed</span>
+			<span class="na">indentType</span><span class="p">:</span> <span class="dl">'</span><span class="s1">tab</span><span class="dl">'</span><span class="p">,</span>
+			<span class="na">indentWidth</span><span class="p">:</span> <span class="mi">1</span>
+		<span class="p">}).</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">error</span><span class="dl">'</span><span class="p">,</span> <span class="nx">sass</span><span class="p">.</span><span class="nx">logError</span><span class="p">))</span>
+		<span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">sourcemaps</span><span class="p">.</span><span class="nx">write</span><span class="p">(</span><span class="dl">'</span><span class="s1">./</span><span class="dl">'</span><span class="p">))</span>
+		<span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="dl">'</span><span class="s1">src/css</span><span class="dl">'</span><span class="p">))</span>
+		<span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">browserSync</span><span class="p">.</span><span class="nx">stream</span><span class="p">());</span>
+<span class="p">});</span></code></pre></figure>
+
+<p>scss파일을 수정 한 뒤 저장하면 자동으로 컴파일된다.</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="c1">// ---------------------------------</span>
+<span class="c1">// Tasks</span>
+<span class="c1">// ---------------------------------</span>
+<span class="c1">// task.sprite</span>
+<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="dl">'</span><span class="s1">sprite</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+	<span class="kd">var</span> <span class="nx">folders</span> <span class="o">=</span> <span class="nx">getFolders</span><span class="p">(</span><span class="nx">dir</span><span class="p">.</span><span class="nx">source</span> <span class="o">+</span> <span class="nx">dir</span><span class="p">.</span><span class="nx">img</span> <span class="o">+</span> <span class="nx">dir</span><span class="p">.</span><span class="nx">sprite</span><span class="p">);</span>
+	<span class="nx">folders</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">folder</span><span class="p">)</span> <span class="p">{</span>
+		<span class="kd">var</span> <span class="nx">spriteData</span> <span class="o">=</span> <span class="nx">gulp</span><span class="p">.</span><span class="nx">src</span><span class="p">(</span><span class="nx">dir</span><span class="p">.</span><span class="nx">sprite</span> <span class="o">+</span> <span class="nx">folder</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">/*.png</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span><span class="na">cwd</span><span class="p">:</span> <span class="nx">dir</span><span class="p">.</span><span class="nx">source</span> <span class="o">+</span> <span class="nx">dir</span><span class="p">.</span><span class="nx">img</span><span class="p">}).</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">spritesmith</span><span class="p">({</span>
+			<span class="na">imgPath</span><span class="p">:</span> <span class="dl">'</span><span class="s1">../</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">dir</span><span class="p">.</span><span class="nx">img</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">sp_</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">folder</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">.png</span><span class="dl">'</span><span class="p">,</span>
+			<span class="na">imgName</span><span class="p">:</span> <span class="dl">'</span><span class="s1">sp_</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">folder</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">.png</span><span class="dl">'</span><span class="p">,</span>
+			<span class="na">cssName</span><span class="p">:</span> <span class="dl">'</span><span class="s1">_sp_</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">folder</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">.scss</span><span class="dl">'</span><span class="p">,</span>
+			<span class="na">padding</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+			<span class="na">algorithm</span><span class="p">:</span> <span class="dl">'</span><span class="s1">binary-tree</span><span class="dl">'</span><span class="p">,</span> <span class="c1">//top-down, left-right, diagonal, alt-diagonal, binary-tree</span>
+			<span class="na">cssTemplate</span><span class="p">:</span> <span class="nx">dir</span><span class="p">.</span><span class="nx">source</span> <span class="o">+</span> <span class="nx">dir</span><span class="p">.</span><span class="nx">scss</span> <span class="o">+</span> <span class="nx">dir</span><span class="p">.</span><span class="nx">lib</span> <span class="o">+</span> <span class="nx">dir</span><span class="p">.</span><span class="nx">png_template</span><span class="p">,</span>
+			<span class="na">cssVarMap</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">sprite</span><span class="p">)</span> <span class="p">{</span>
+				<span class="nx">sprite</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">folder</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">-</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">sprite</span><span class="p">.</span><span class="nx">name</span><span class="p">;</span>
+				<span class="nx">sprite</span><span class="p">.</span><span class="nx">origin</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">sp_</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">folder</span><span class="p">;</span>
+			<span class="p">},</span>
+			<span class="na">cssSpritesheetName</span><span class="p">:</span> <span class="dl">'</span><span class="s1">sp_</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">folder</span>
+		<span class="p">}));</span>
+
+		<span class="nx">spriteData</span><span class="p">.</span><span class="nx">img</span>
+			<span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">buffer</span><span class="p">())</span>
+			<span class="c1">// .pipe(tiny())</span>
+			<span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="nx">dir</span><span class="p">.</span><span class="nx">source</span> <span class="o">+</span> <span class="nx">dir</span><span class="p">.</span><span class="nx">img</span><span class="p">));</span>
+		<span class="nx">spriteData</span><span class="p">.</span><span class="nx">css</span><span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="nx">dir</span><span class="p">.</span><span class="nx">source</span> <span class="o">+</span> <span class="nx">dir</span><span class="p">.</span><span class="nx">scss</span> <span class="o">+</span> <span class="nx">dir</span><span class="p">.</span><span class="nx">lib</span><span class="p">));</span>
+	<span class="p">});</span>
+<span class="p">});</span>
+
+<span class="c1">// ---------------------------------</span>
+<span class="c1">// Tasks</span>
+<span class="c1">// ---------------------------------</span>
+<span class="c1">// task.svg_sprite</span>
+<span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="dl">'</span><span class="s1">svg_sprite</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+	<span class="kd">var</span> <span class="nx">folders</span> <span class="o">=</span> <span class="nx">getFolders</span><span class="p">(</span><span class="nx">dir</span><span class="p">.</span><span class="nx">source</span> <span class="o">+</span> <span class="nx">dir</span><span class="p">.</span><span class="nx">img</span> <span class="o">+</span> <span class="nx">dir</span><span class="p">.</span><span class="nx">svg_sprite</span><span class="p">);</span>
+	<span class="nx">folders</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">folder</span><span class="p">)</span> <span class="p">{</span>
+		<span class="k">return</span> <span class="nx">gulp</span><span class="p">.</span><span class="nx">src</span><span class="p">(</span><span class="nx">folder</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">/*.svg</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span><span class="na">cwd</span><span class="p">:</span> <span class="nx">dir</span><span class="p">.</span><span class="nx">source</span> <span class="o">+</span> <span class="nx">dir</span><span class="p">.</span><span class="nx">img</span> <span class="o">+</span> <span class="nx">dir</span><span class="p">.</span><span class="nx">svg_sprite</span><span class="p">})</span>
+			<span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">svgSprite</span><span class="p">({</span>
+				<span class="na">shape</span><span class="p">:</span> <span class="p">{</span>
+					<span class="na">spacing</span><span class="p">:</span> <span class="p">{</span>
+						<span class="na">padding</span><span class="p">:</span> <span class="mi">10</span>
+					<span class="p">}</span>
+				<span class="p">},</span>
+				<span class="na">mode</span><span class="p">:</span> <span class="p">{</span>
+					<span class="na">css</span><span class="p">:</span> <span class="p">{</span>
+						<span class="na">render</span><span class="p">:</span> <span class="p">{</span>
+							<span class="na">scss</span><span class="p">:</span> <span class="p">{</span>
+								<span class="na">template</span><span class="p">:</span> <span class="nx">dir</span><span class="p">.</span><span class="nx">source</span> <span class="o">+</span> <span class="nx">dir</span><span class="p">.</span><span class="nx">scss</span> <span class="o">+</span> <span class="nx">dir</span><span class="p">.</span><span class="nx">lib</span> <span class="o">+</span> <span class="nx">dir</span><span class="p">.</span><span class="nx">svg_template</span><span class="p">,</span>
+								<span class="na">dest</span><span class="p">:</span> <span class="dl">'</span><span class="s1">../</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">dir</span><span class="p">.</span><span class="nx">scss</span> <span class="o">+</span> <span class="nx">dir</span><span class="p">.</span><span class="nx">lib</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">_sp_</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">folder</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">.scss</span><span class="dl">'</span>
+							<span class="p">}</span>
+						<span class="p">},</span>
+						<span class="na">mixin</span><span class="p">:</span> <span class="nx">folder</span><span class="p">,</span>
+						<span class="na">dest</span><span class="p">:</span> <span class="dl">'</span><span class="s1">./</span><span class="dl">'</span><span class="p">,</span>
+						<span class="na">sprite</span><span class="p">:</span> <span class="dl">'</span><span class="s1">../img/sp_</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">folder</span><span class="p">,</span>
+						<span class="na">bust</span><span class="p">:</span> <span class="kc">false</span>
+					<span class="p">}</span>
+				<span class="p">}</span>
+			<span class="p">}))</span>
+			<span class="p">.</span><span class="nx">pipe</span><span class="p">(</span><span class="nx">gulp</span><span class="p">.</span><span class="nx">dest</span><span class="p">(</span><span class="nx">dir</span><span class="p">.</span><span class="nx">source</span> <span class="o">+</span> <span class="nx">dir</span><span class="p">.</span><span class="nx">img</span><span class="p">));</span>
+	<span class="p">});</span>
+<span class="p">});</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">Output</span>
+
+<span class="nx">$chat_file</span><span class="o">-</span><span class="nx">ico_asf</span><span class="p">:</span> <span class="mi">116</span><span class="nx">px</span> <span class="mi">0</span><span class="nx">px</span> <span class="o">-</span><span class="mi">116</span><span class="nx">px</span> <span class="mi">0</span><span class="nx">px</span> <span class="mi">106</span><span class="nx">px</span> <span class="mi">140</span><span class="nx">px</span> <span class="mi">686</span><span class="nx">px</span> <span class="mi">440</span><span class="nx">px</span> <span class="dl">'</span><span class="s1">../img/sp_chat_file.png</span><span class="dl">'</span> <span class="dl">'</span><span class="s1">chat_file-ico_asf</span><span class="dl">'</span> <span class="dl">'</span><span class="s1">sp_chat_file</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="nx">실제</span> <span class="nx">사용</span> <span class="nx">방법</span>
+
+<span class="o">&amp;</span><span class="p">.</span><span class="nx">asf</span> <span class="p">{</span>
+  <span class="p">@</span><span class="nd">include</span> <span class="nx">sp_chat_file_on</span><span class="p">(</span><span class="nx">$chat_file</span><span class="o">-</span><span class="nx">ico_asf</span><span class="p">)</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>웹 사이트 성능 최적화 방법 중 하나인 이미지 스프라이트이다.
+여러장의 이미지를 한장의 png파일로 만들어서 그 이미지를 사용한다.
+페이지에 쓰이는 이미지들을 한 곳에 모아두고 좌표을 적어서 사용한다.</p>
+
+<p>Gulp task를 사용하지 않으면 이미지를 추가할때마다 좌표값을 일일이 계산해서 입력해줘야 하는 번거로움이 있다.
+그럴 때 아주 유용한 task인데 각각의 이미지 좌표를 해당 변수에 담아 @include로 사용하고 싶은 이미지의 변수를 불러오면 자동으로 해당하는 이미지의 좌표가 적용된다.</p>
+
+    
+  </section>
+
+  <!-- Social media shares -->
+  
+
+<div class="share-buttons">
+    <ul class="share-buttons">
+        <div class="meta">Share</div>
+        
+        <li>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fblog%2F2020-01-21-sass" target="_blank" title=" Facebook">
+			<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+			<span class="sr-only">Share on Facebook</span>
+		</a>
+        </li>
+         
+        <li>
+            <a href="https://twitter.com/intent/tweet?text=SASS%0A%20http%3A%2F%2Flocalhost%3A4000%2Fblog%2F2020-01-21-sass" target="_blank" title="">
+			<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+			<span class="sr-only">Tweet</span>
+		</a>
+        </li>
+            
+        <li>
+            <a href="http://www.reddit.com/submit?url=http://localhost:4000/blog/2020-01-21-sass&title=SASS%0A%20%7C%20AY+Portfolio" target="_blank" title=" Reddit">
+			<i class="fa fa-reddit-square fa-2x" aria-hidden="true"></i>
+			<span class="sr-only">Share on Reddit</span>
+		</a>
+        </li>
+           
+        <li>
+            <a href="mailto:?subject=SASS%0A%20%7C%20AY+Portfolio&body=:%20http://localhost:4000/blog/2020-01-21-sass" target="_blank" title="">
+			<i class="fa fa-envelope-square fa-2x" aria-hidden="true"></i>
+			<span class="sr-only">Email</span>
+		</a>
+        </li>
+        
+    </ul>
+</div>
+
+
+
+
+   <!-- Tag list -->
+  
+  
+
+
+<footer>
+  <div class="tag-list">
+    
+      <div class="meta">Tags</div>
+    
+
+    
+    <a class="button" href="/tags#gulp">
+      <p><i class="fa fa-tag fa-fw"></i> gulp</p>
+    </a>
+    
+    <a class="button" href="/tags#sass">
+      <p><i class="fa fa-tag fa-fw"></i> sass</p>
+    </a>
+    
+    <a class="button" href="/tags#scss">
+      <p><i class="fa fa-tag fa-fw"></i> scss</p>
+    </a>
+    
+  </div>
+</footer>
+
+
+</article>
+
+<!-- Disqus -->
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+    
+    <div id="previous-post">
+        <a alt="웹폰트
+" href="/blog/2020-03-21-webfont">
+            <p>Previous post</p>
+            웹폰트
+
+        </a>
+    </div>
+    
+
+    
+    <div id="next-post">
+        <a alt="Word break
+" href="/blog/2020-01-20-word-break">
+            <p>Next post</p>
+            Word break
+
+        </a>
+    </div>
+    
+</div>
+
+
+
+<!-- To change color of links in the page -->
+<style>
+  
+
+  header#main {
+    background-repeat:no-repeat;
+  
+  }
+</style>
+
+    </div>
+    <footer class="site-footer">
+    <p class="text">
+        Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+</p>
+            <div class="footer-icons">
+                <ul>
+                <!-- Social icons from Font Awesome, if enabled -->
+                
+<li>
+    <a feed.xml href="feed.xml"
+       title="Follow RSS feed">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+        </span>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+    <a href="https://github.com/sylhare" title="Follow on GitHub">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+        </span>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </ul>
+            </div>
+</footer>
+
+
+
+  </body>
+</html>

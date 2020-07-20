@@ -1,0 +1,72 @@
+I"C<h2 id="block-요소">block 요소</h2>
+
+<p>ex) div,ul,li,h1~h6,header,footer,nav,section 등</p>
+
+<p>기준이 되는 부모의 width에 꽉 찬다.
+width 속성을 주면 부모 width 와의 차이만큼 자동으로 margin 처리된다.
+즉, width가 주어진 block요소를 가운데로 보내고자 한다면 나머지 영역의 margin값을 양쪽에 동일하게 분할해주어야 한다. 이와같은 css값이 auto 이다.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"display-block"</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+.display-block {
+    margin: 0 auto;
+}</code></pre></figure>
+
+<h2 id="inline-요소">inline 요소</h2>
+
+<p>ex) a, span, img, input, em 등</p>
+
+<p>기본적으로 자기 자신이 갖은 컨텐츠의 크기만을 갖는다. width, height, margin-top, margin-bottom, padding-top, padding-bottom 의값을 인식할수 없다. width, height, padding, margin의 값을 제대로 반영하기 위해선, display를 block, 혹은 inline-block(편하게 width, height, padding, margin 의 프로퍼티를 갖는 inline 요소정도로 생각하면 되겠다.) 으로 주어야한다.
+inline요소를 센터로 보내는 방법은 부모에게 text-align:center 를 주면 된다.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"inline-wrap"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span&gt;</span>inline 요소<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+.inline-wrap {
+    text-align:center
+}</code></pre></figure>
+
+<h2 id="table-요소">table 요소</h2>
+
+<p>ex) table, table-cell, table-row 등</p>
+
+<p>display 속성을 table 속성으로 바꿔준다.
+table을 보면 갯수가 몇개까지 늘어나든 동일한 너비를 구현할 수 있다.table 속성으로 바꾸면서까지 이 속성을 쓰는 이유는 유동적인 레이아웃을 만들기 위해서다.
+뒤에서 다룰 flex를 써도 유동적인 레이아웃을 만들 수 있다.
+하지만 flex는 ie10이상을 지원한다. 때문에 하위 브라우저까지 신경써야 하는 프로젝트라면 display: table;로 레이아웃을 짜는걸 추천한다.</p>
+
+<iframe height="265" style="width: 100%;" scrolling="no" title="zYYdmOG" src="https://codepen.io/ahyoung/embed/zYYdmOG?height=265&amp;theme-id=default&amp;default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+    See the Pen <a href="https://codepen.io/ahyoung/pen/zYYdmOG">zYYdmOG</a> by ahyoung
+    (<a href="https://codepen.io/ahyoung">@ahyoung</a>) on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+<p>위에 코드펜을 보면 알 수 있듯이 목록의 갯수가 3개,2개,1개 일 때에 유동적인 레이아웃을 구현해냈다.
+네이버 톡톡, 파스타, 파트너센터에서 가장 많이 사용한 속성이다.</p>
+
+<h2 id="flexbox-요소">flexbox 요소</h2>
+
+<p>ex) flex, flex-wrap, flex-grow, flex-shrink, flex-basis, order 등</p>
+
+<p>일반적인 웹 페이지 레이아웃은 display, float, position 등과 같은 속성을 사용해 구현한다.
+하지만 이 속성들은 구현 방법이 복잡하고 한계가 있다.
+flexbox를 사용하면 요소의 크기와 순서를 유연하게 배치할 수 있다.</p>
+
+<p>flexbox는 유동적인 웹 페이지에 효율적으로 요소를 배치, 정렬, 분산할 수 있다.
+복잡한 계산 없이 요소의 크기와 순서를 유연하게 배치할 수 있다.
+네이버 파트너센터 개편때에 회원가입 페이지를 마크업하면서 고민이 많았다.
+어떻게 하면 유동적으로 레이아웃할 수 있을까.. 많은 고민 끝에 선택한건 flex였다.
+이것 또한, ie10이상부터 지원하기로 했기 때문에 가능했던 일이었다.</p>
+
+<p>하지만, 여기서 변수가 있다. ie10 이상을 완전히 지원하지는 않는다는것이다. 10,11에서 버그가 발견되기도 한다.
+모바일 브라우저는 거의 대부분 지원한다고 봐도 무방하다.
+(<a href="https://caniuse.com/#search=flex" target="_blank"><strong>Can I use 사이트의 ‘flex’ 검색 결과</strong></a>참고.)</p>
+
+<iframe height="265" style="width: 100%;" scrolling="no" title="pBmzgw" src="https://codepen.io/ahyoung/embed/pBmzgw?height=265&amp;theme-id=default&amp;default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+    See the Pen <a href="https://codepen.io/ahyoung/pen/pBmzgw">pBmzgw</a> by ahyoung
+    (<a href="https://codepen.io/ahyoung">@ahyoung</a>) on <a href="https://codepen.io">CodePen</a>.
+</iframe>
+
+<p>위에 코드펜을 보면 알 수 있듯이 유연한 레이아웃을 구현해냈다.
+실제 페이지에도 적용하여 만족스러운 결과를 얻었다.</p>
+:ET

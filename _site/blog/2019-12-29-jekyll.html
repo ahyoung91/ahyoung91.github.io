@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<!--
+    Type on Strap jekyll theme v2.2.4
+    Copyright 2016-2019 Sylhare
+    Theme free for personal and commercial use under the MIT license
+    https://github.com/sylhare/Type-on-Strap/blob/master/LICENSE
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Main JS (navbar.js, katex_init.js and masonry_init.js)-->
+    <script defer src="/assets/js/main.min.js"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="http://localhost:4000/blog/2019-12-29-jekyll">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="AY Portfolio" href="http://localhost:4000/feed.xml"/>
+    
+    
+
+    <!-- KaTeX 0.8.3 -->
+    <!-- if you have any issue check https://github.com/KaTeX/KaTeX -->
+    
+    <script src="/assets/js/vendor/katex.min.js"></script>
+    
+
+    <!-- Google Analytics / Cookie Consent -->
+    <script>
+      const cookieName = 'cookie-notice-dismissed-http://localhost:4000';
+      const isCookieConsent = 'false';
+      const analyticsName = '';
+    </script>
+
+    
+    
+
+    <!-- seo tags -->
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>jekyll을 이용해 자신만의 Github Blog 만들기 | AY Portfolio</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="jekyll을 이용해 자신만의 Github Blog 만들기" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Jelyll은 markdown으로 작성된 문서를 HTML로 변환하여 웹사이트를 구축할 수 있도록 돕는 Static Website generator로 Ruby로 작성되어 있다. HTML/CSS등의 정적파일만으로 사이트를 생성하므로 매우 빠르고 가벼우며 무료이다." />
+<meta property="og:description" content="Jelyll은 markdown으로 작성된 문서를 HTML로 변환하여 웹사이트를 구축할 수 있도록 돕는 Static Website generator로 Ruby로 작성되어 있다. HTML/CSS등의 정적파일만으로 사이트를 생성하므로 매우 빠르고 가벼우며 무료이다." />
+<link rel="canonical" href="http://localhost:4000/blog/2019-12-29-jekyll" />
+<meta property="og:url" content="http://localhost:4000/blog/2019-12-29-jekyll" />
+<meta property="og:site_name" content="AY Portfolio" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-12-29T00:00:00+09:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"http://localhost:4000/blog/2019-12-29-jekyll","headline":"jekyll을 이용해 자신만의 Github Blog 만들기","dateModified":"2019-12-29T00:00:00+09:00","datePublished":"2019-12-29T00:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2019-12-29-jekyll"},"description":"Jelyll은 markdown으로 작성된 문서를 HTML로 변환하여 웹사이트를 구축할 수 있도록 돕는 Static Website generator로 Ruby로 작성되어 있다. HTML/CSS등의 정적파일만으로 사이트를 생성하므로 매우 빠르고 가벼우며 무료이다.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta property="og:image" content="http://localhost:4000/assets/img/pexels/triangular.jpeg">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:title" content="jekyll을 이용해 자신만의 Github Blog 만들기
+">
+    <meta name="twitter:description" content="Jelyll은 markdown으로 작성된 문서를 HTML로 변환하여 웹사이트를 구축할 수 있도록 돕는 Static Website generator로 Ruby로 작성되어 있다. HTML/CSS등의 정적파일만으로 사이트를 생성하므로 매우 빠르고 가벼우며 무료이다.설치과정1. githu...">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="http://localhost:4000/assets/img/pexels/triangular.jpeg">
+</head>
+
+  <body>
+    <header class="site-header">
+
+    <!-- Logo and title -->
+	<div class="branding">
+        
+		<a href="/">
+			<img alt="logo img" class="avatar" src="/assets/img/logo.png" />
+		</a>
+        
+
+		<h1 class="site-title">
+			<a aria-label="AY Portfolio" href="/">
+        AY Portfolio
+      </a>
+		</h1>
+	</div>
+
+    <!-- Toggle menu -->
+    <nav class="clear">
+    <a aria-label="pull" id="pull" class="toggle" href="#">
+    <i class="fa fa-bars fa-lg"></i>
+    </a>
+
+    <!-- Menu -->
+    <ul class="hide">
+        
+
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="About" title="About" href="/about/">
+                     About 
+                </a>
+            </li>
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Blog" title="Blog" href="/blog/">
+                     Blog 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Portfolio" title="Portfolio" href="/portfolio/">
+                     Portfolio 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Search" title="Search" href="/search/">
+                     <i class="fa fa-search" aria-hidden="true"></i>
+                    
+                </a>
+            </li>
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Tags" title="Tags" href="/tags/">
+                     <i class="fa fa-tags" aria-hidden="true"></i>
+                    
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+    </ul>
+
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header id="main" style="">
+    <div class="title-padder">
+      
+      <h1 id="jekyll%EC%9D%84+%EC%9D%B4%EC%9A%A9%ED%95%B4+%EC%9E%90%EC%8B%A0%EB%A7%8C%EC%9D%98+Github+Blog+%EB%A7%8C%EB%93%A4%EA%B8%B0%0A" class="title">jekyll을 이용해 자신만의 Github Blog 만들기
+</h1>
+      
+
+
+<div class="post-info">
+    <p class="meta">
+      December 29, 2019
+    </p></div>
+
+      
+    </div>
+  </header>
+
+  <section class="post-content">
+  
+      <p><a href="https://jekyllrb-ko.github.io/" target="_blank"><strong>Jelyll</strong></a>은 markdown으로 작성된 문서를 HTML로 변환하여 웹사이트를 구축할 수 있도록 돕는 Static Website generator로 Ruby로 작성되어 있다. HTML/CSS등의 정적파일만으로 사이트를 생성하므로 매우 빠르고 가벼우며 무료이다.</p>
+
+<h2 id="설치과정">설치과정</h2>
+
+<h3 id="1-github에-새로운-repository-만들기">1. github에 새로운 repository 만들기</h3>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/pexels/posts/jekyll_img1.png" alt="jekyll_img1.png" />
+    </div>
+    
+</div>
+
+<p>Github에서 새로운 저장소를 만든다. 이 때 저장소의 이름을 자신의 이름 뒤에 .github.io가 붙은 이름으로 짓는다.
+이렇게 해야 yourname.github.io의 도메인으로 접속할 수 있는 블로그가 된다.</p>
+
+<h3 id="2-환경세팅">2. 환경세팅</h3>
+<p>아래 설명은 윈도우 환경에서 설치한 내용이다.
+우선 <a href="https://rubyinstaller.org/downloads/" target="_blank"><strong>Ruby</strong></a>를 설치한다.<br />
+설치가 완료되면 윈도우 메뉴에서 Start Command Promt with Ruby 를 검색하면 다음과 같이 나타난다.</p>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/pexels/posts/jekyll_img2.png" alt="jekyll_img2.png" />
+    </div>
+    
+</div>
+
+<p>해당 커맨드에서</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js">    <span class="nx">gem</span> <span class="nx">install</span> <span class="nx">jekyll</span></code></pre></figure>
+
+<p>을 입력해주면 설치가 진행된다.</p>
+
+<p>설치 이후 바로</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js">    <span class="nx">jekyll</span> <span class="k">new</span> <span class="p">.</span></code></pre></figure>
+
+<p>를 실행하면 정상적으로 동작하지 않는다. 이유는 의존성을 갖는 패키지들의 설치가 필요하기 때문인데 오류를 보고 구글링하여 설치해도 되지만 필요한 파일을 미리 설치한다면 시간이 절약되므로 아래 패키지들을 미리 설치해준다.</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js">    <span class="nx">gem</span> <span class="nx">install</span> <span class="nx">bundler</span> 
+
+    <span class="nx">gem</span> <span class="nx">install</span> <span class="nx">minima</span> 
+
+    <span class="nx">gem</span> <span class="nx">install</span> <span class="nx">jekyll</span><span class="o">-</span><span class="nx">feed</span> 
+
+    <span class="nx">gem</span> <span class="nx">install</span> <span class="nx">tzinfo</span><span class="o">-</span><span class="nx">data</span></code></pre></figure>
+
+<p>설치가 끝나면</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js">    <span class="nx">jekyll</span> <span class="k">new</span> <span class="p">.</span></code></pre></figure>
+
+<p>를 다시 실행해보자.</p>
+
+<p>정상적으로 설치가 완료됐다면 jekyll serve를 실행해보자.
+jekyll 가 내장하고 있는 서버가 동작하고 로컬PC에서도 생성된 사이트를 확인할 수 있다.
+로컬에서 확인하기 위해서는 브라우저에서 http://localhost:4000 으로 접속해보자.
+아래 화면이 나왔다면 설치에 성공한것이다.</p>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/pexels/posts/jekyll_img3.png" alt="jekyll_img3.png" />
+    </div>
+    
+</div>
+
+<p>여기까지 설치과정에 대해 알아봤고, 다음 포스팅 때엔 jekyll 폴더구조 및 테마 적용에 대해 알아보겠다.</p>
+
+    
+  </section>
+
+  <!-- Social media shares -->
+  
+
+<div class="share-buttons">
+    <ul class="share-buttons">
+        <div class="meta">Share</div>
+        
+        <li>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fblog%2F2019-12-29-jekyll" target="_blank" title=" Facebook">
+			<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+			<span class="sr-only">Share on Facebook</span>
+		</a>
+        </li>
+         
+        <li>
+            <a href="https://twitter.com/intent/tweet?text=jekyll%EC%9D%84+%EC%9D%B4%EC%9A%A9%ED%95%B4+%EC%9E%90%EC%8B%A0%EB%A7%8C%EC%9D%98+Github+Blog+%EB%A7%8C%EB%93%A4%EA%B8%B0%0A%20http%3A%2F%2Flocalhost%3A4000%2Fblog%2F2019-12-29-jekyll" target="_blank" title="">
+			<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+			<span class="sr-only">Tweet</span>
+		</a>
+        </li>
+            
+        <li>
+            <a href="http://www.reddit.com/submit?url=http://localhost:4000/blog/2019-12-29-jekyll&title=jekyll%EC%9D%84+%EC%9D%B4%EC%9A%A9%ED%95%B4+%EC%9E%90%EC%8B%A0%EB%A7%8C%EC%9D%98+Github+Blog+%EB%A7%8C%EB%93%A4%EA%B8%B0%0A%20%7C%20AY+Portfolio" target="_blank" title=" Reddit">
+			<i class="fa fa-reddit-square fa-2x" aria-hidden="true"></i>
+			<span class="sr-only">Share on Reddit</span>
+		</a>
+        </li>
+           
+        <li>
+            <a href="mailto:?subject=jekyll%EC%9D%84+%EC%9D%B4%EC%9A%A9%ED%95%B4+%EC%9E%90%EC%8B%A0%EB%A7%8C%EC%9D%98+Github+Blog+%EB%A7%8C%EB%93%A4%EA%B8%B0%0A%20%7C%20AY+Portfolio&body=:%20http://localhost:4000/blog/2019-12-29-jekyll" target="_blank" title="">
+			<i class="fa fa-envelope-square fa-2x" aria-hidden="true"></i>
+			<span class="sr-only">Email</span>
+		</a>
+        </li>
+        
+    </ul>
+</div>
+
+
+
+
+   <!-- Tag list -->
+  
+  
+
+
+<footer>
+  <div class="tag-list">
+    
+      <div class="meta">Tags</div>
+    
+
+    
+    <a class="button" href="/tags#github">
+      <p><i class="fa fa-tag fa-fw"></i> github</p>
+    </a>
+    
+    <a class="button" href="/tags#jekyll">
+      <p><i class="fa fa-tag fa-fw"></i> jekyll</p>
+    </a>
+    
+  </div>
+</footer>
+
+
+</article>
+
+<!-- Disqus -->
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+    
+    <div id="previous-post">
+        <a alt="디스플레이
+" href="/blog/2020-01-12-display">
+            <p>Previous post</p>
+            디스플레이
+
+        </a>
+    </div>
+    
+
+    
+    <div id="next-post">
+        <a alt="Sample post" href="/blog/2019-06-30-sample-post">
+            <p>Next post</p>
+            Sample post
+        </a>
+    </div>
+    
+</div>
+
+
+
+<!-- To change color of links in the page -->
+<style>
+  
+
+  header#main {
+    background-repeat:no-repeat;
+  
+  }
+</style>
+
+    </div>
+    <footer class="site-footer">
+    <p class="text">
+        Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
+</p>
+            <div class="footer-icons">
+                <ul>
+                <!-- Social icons from Font Awesome, if enabled -->
+                
+<li>
+    <a feed.xml href="feed.xml"
+       title="Follow RSS feed">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+        </span>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+    <a href="https://github.com/sylhare" title="Follow on GitHub">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+        </span>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </ul>
+            </div>
+</footer>
+
+
+
+  </body>
+</html>

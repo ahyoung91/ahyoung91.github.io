@@ -1,0 +1,568 @@
+I"W7<div class="posts">
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="웹폰트
+" class="post-link" href="/blog/2020-03-21-webfont">
+                웹폰트
+
+              </a>
+            </h1>
+            
+
+
+<div class="post-info">
+    <p class="meta">
+      March 21, 2020
+    </p></div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     웹폰트란?
+사용자의 로컬에 폰트 설치 여부와 상관 없이
+폰트 파일을 다운로드 하여 브라우저에 표시해주는 웹 전용 폰트이다.
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="SASS
+" class="post-link" href="/blog/2020-01-21-sass">
+                SASS
+
+              </a>
+            </h1>
+            
+
+
+<div class="post-info">
+    <p class="meta">
+      January 21, 2020
+    </p></div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     SASS는 css를 만들어주는 언어로 자바스크립트처럼 특정 속성(ex. color, margin, width 등)의 값을 변수로 선언하여 필요한 곳에 선언된 변수를 적용할 수도 있고, 반복되는 코드를 한번의 선언으로 여러곳에 재사용할 수 있도록 하는 전처리기이다.
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Word break
+" class="post-link" href="/blog/2020-01-20-word-break">
+                Word break
+
+              </a>
+            </h1>
+            
+
+
+<div class="post-info">
+    <p class="meta">
+      January 20, 2020
+    </p></div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     작업을 하다보면 가볍게 이해한 속성을 바탕으로 관습적으로 사용하는 속성들이 있다.
+그 중 word-break 속성에 대해 조금 더 명확하게 알고 넘어가는게 좋겠다고 생각했다.
+word-break란 단어의 분리를 어떻게 할 것인지 결정한다.
+중요하게 기억할 큰이슈들은 한 단어의 넓이가 자신을 감싸고 있는 tag의 width보다 클경우에 생긴다는 점이다.
+그리고 여기서 영어와 CJK(Chinese/Japanese/Korean text - 이하 한글로 표현) 는 word-break의 적용이 다른 value가 있다는 점이다.
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Position
+" class="post-link" href="/blog/2020-01-15-position">
+                Position
+
+              </a>
+            </h1>
+            
+
+
+<div class="post-info">
+    <p class="meta">
+      January 15, 2020
+    </p></div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     태그들의 기본 position 은 static 으로 없다고 생각해도 무관하겠다.
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="브라우저 렌더링
+" class="post-link" href="/blog/2020-01-14-rendering">
+                브라우저 렌더링
+
+              </a>
+            </h1>
+            
+
+
+<div class="post-info">
+    <p class="meta">
+      January 14, 2020
+    </p></div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     코딩을 하다가 화면에 내가 코딩한 화면이 어떻게 그려지는가 궁금해졌다. 
+어떻게 그려지는가를 알면 웹 성능을 최적화 하는데에 도움이 될 거 같아 포스트를 해본다.
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="수직정렬
+" class="post-link" href="/blog/2020-01-13-vertical">
+                수직정렬
+
+              </a>
+            </h1>
+            
+
+
+<div class="post-info">
+    <p class="meta">
+      January 13, 2020
+    </p></div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     작업을 하다보면 가운데로 정렬하는 방법에 대해 고민하게 된다.
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="디스플레이
+" class="post-link" href="/blog/2020-01-12-display">
+                디스플레이
+
+              </a>
+            </h1>
+            
+
+
+<div class="post-info">
+    <p class="meta">
+      January 12, 2020
+    </p></div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     block 요소
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="jekyll을 이용해 자신만의 Github Blog 만들기
+" class="post-link" href="/blog/2019-12-29-jekyll">
+                jekyll을 이용해 자신만의 Github Blog 만들기
+
+              </a>
+            </h1>
+            
+
+
+<div class="post-info">
+    <p class="meta">
+      December 29, 2019
+    </p></div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     Jelyll은 markdown으로 작성된 문서를 HTML로 변환하여 웹사이트를 구축할 수 있도록 돕는 Static Website generator로 Ruby로 작성되어 있다. HTML/CSS등의 정적파일만으로 사이트를 생성하므로 매우 빠르고 가벼우며 무료이다.
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Sample post" class="post-link" href="/blog/2019-06-30-sample-post">
+                Sample post
+              </a>
+            </h1>
+            
+
+
+<div class="post-info">
+    <p class="meta">
+      June 30, 2019
+    </p></div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     Consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. 
+Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Color Post" class="post-link" href="/blog/2019-05-18-color-post">
+                Color Post
+              </a>
+            </h1>
+            
+
+
+<div class="post-info"><a href="https://github.com/sylhare" target="_blank">
+      <img src="https://avatars3.githubusercontent.com/u/20642750?s=460&amp;v=4" />
+    
+    <p class="meta">
+      Sylhare - May 18, 2019
+    </p></a></div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     What a colorful post!
+
+This is an idea that came from xukimseven/HardCandy-Jekyll 
+looking at this cheerful and colorful them, I wanted to enable something similar for mine.
+
+You can go fork and star hers too! 😉
+
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <div class="post-img">
+            <a aria-label="Feature images" href="/blog/2014-11-29-feature-images">
+                <img alt="Feature images" src="/assets/thumbnails/pexels/desk-messy.jpeg" />
+            </a>
+        </div>
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Feature images" class="post-link" href="/blog/2014-11-29-feature-images">
+                Feature images
+              </a>
+            </h1>
+            
+
+
+<div class="post-info">
+    <p class="meta">
+      November 29, 2014
+    </p></div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     Hopefully you will find enough information about how to set images in your blog here.
+This is an example of a post which includes a feature image specified in the front matter of the post. 
+The feature image spans the full-width of the page, and is shown with the title on permalink pages:
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Markdown and HTML" class="post-link" href="/blog/2014-11-28-markdown-and-html">
+                Markdown and HTML
+              </a>
+            </h1>
+            
+
+
+<div class="post-info"><a href="https://github.com/rohanchandra" target="_blank">
+      <img src="https://avatars2.githubusercontent.com/u/816965?s=460&amp;v=4" />
+    
+    <p class="meta">
+      Rohan Chandra - November 28, 2014
+    </p></a></div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     Jekyll supports the use of Markdown with inline HTML tags which makes it easier to quickly write posts with Jekyll, without having to worry too much about text formatting. A sample of the formatting follows.
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="What's your title" class="post-link" href="/blog/2014-11-27-whats-your-title">
+                What's your title
+              </a>
+            </h1>
+            
+
+
+<div class="post-info">
+      <img src="https://avatars2.githubusercontent.com/u/17688846?s=460&amp;v=4" />
+    
+    <p class="meta">
+      Mhagnumdw - November 27, 2014
+    </p></div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     This is an example of a post which includes a feature image that has a
+text, where you don’t want to redisplay the title.
+Mind your image size in order for the text to be displayed where you want it to.
+The only limit is your imagination.
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="The Real Lorem Ipsum" class="post-link" href="/blog/2014-11-26-lorem-ipsum">
+                The Real Lorem Ipsum
+              </a>
+            </h1>
+            
+
+
+<div class="post-info">
+    <p class="meta">
+      November 26, 2014
+    </p></div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     Lorem Ipsum
+
+from “de Finibus Bonorum et Malorum” written by Cicero in 45 BC.
+
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Markup: Syntax Highlighting" class="post-link" href="/blog/2014-08-08-markup-syntax-highlighting">
+                Markup: Syntax Highlighting
+              </a>
+            </h1>
+            
+
+
+<div class="post-info"><a href="https://github.com/mmistakes" target="_blank">
+      <img src="https://avatars3.githubusercontent.com/u/1376749?s=460&amp;v=4" />
+    
+    <p class="meta">
+      Michael Rose - August 8, 2014
+    </p></a></div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     Syntax highlighting1 is a feature that displays source code. 
+This feature facilitates writing in a structured language such as a programming language or a markup language as it makes import things visually distinct.
+
+
+  
+    
+
+      &amp;#8617;
+    
+  
+
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Generate a table of content" class="post-link" href="/blog/2013-12-12-generate-a-table-of-content">
+                Generate a table of content
+              </a>
+            </h1>
+            
+
+
+<div class="post-info"><a href="https://github.com/sylhare" target="_blank">
+      <img src="https://avatars3.githubusercontent.com/u/20642750?s=460&amp;v=4" />
+    
+    <p class="meta">
+      Sylhare - December 12, 2013
+    </p></a></div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     Using Kramdown GFM
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+    <div class="post-teaser">
+        
+        <div class="post-img">
+            <a aria-label="Tech Stuff example" href="/blog/2013-11-02-tech-stuff-example">
+                <img alt="Tech Stuff example" src="/assets/thumbnails/pexels/circuit.jpeg" />
+            </a>
+        </div>
+        
+        <span>
+          <header>
+            <h1>
+              <a aria-label="Tech Stuff example" class="post-link" href="/blog/2013-11-02-tech-stuff-example">
+                Tech Stuff example
+              </a>
+            </h1>
+            
+
+
+<div class="post-info">
+    <p class="meta">
+      November 2, 2013
+    </p></div>
+
+          </header>
+          
+              <div class="excerpt">
+                  
+                     Because if you put some code in your blog, you would at least make it:
+
+                  
+              </div>
+          
+      </span>
+    </div>
+    
+</div>
+
+:ET

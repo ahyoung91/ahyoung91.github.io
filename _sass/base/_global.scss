@@ -50,7 +50,6 @@ h6 {
   a {
     color: $text-color;
   }
-
 }
 
 h1 {
@@ -58,7 +57,10 @@ h1 {
 }
 
 h2 {
+  margin: 45px 0 30px;
   font-size: 1.75em;
+  color: #333;
+  font-weight: 500;
 }
 
 h3 {
@@ -80,11 +82,11 @@ video {
   margin-right: auto;
 }
 
-img[align=left] {
+img[align='left'] {
   margin-right: 3%;
 }
 
-img[align=right] {
+img[align='right'] {
   margin-left: 3%;
 }
 
@@ -100,11 +102,16 @@ img[align=right] {
   h3 {
     font-size: 1em;
   }
-  h4, tr, th, .meta {
+  h4,
+  tr,
+  th,
+  .meta {
     font-size: 0.9em;
   }
-  p, li, td {
-    font-size: 0.8em;
+  p,
+  li,
+  td {
+    font-size: 1em;
   }
 
   iframe,
@@ -114,6 +121,12 @@ img[align=right] {
   video {
     max-width: 100%;
     padding: 0 1%;
+  }
+
+  .portfolio-link {
+    img {
+      width: 100%;
+    }
   }
 }
 
@@ -127,10 +140,15 @@ img[align=right] {
   h3 {
     font-size: 0.9em;
   }
-  h4, th, tr, .meta {
+  h4,
+  th,
+  tr,
+  .meta {
     font-size: 0.85em;
   }
-  p, li, td {
+  p,
+  li,
+  td {
     font-size: 0.8em;
   }
   li li {
@@ -146,11 +164,9 @@ img[align=right] {
 }
 
 blockquote {
-  border-left: 2px solid darken($blockquote-color, 20%);
+  border-left: 1px solid #999;
   margin: 1em 1em;
-  padding: 0.75em 1em;
-  background-color: $blockquote-color;
-  box-shadow: 0 2px 2px $border-color;
+  padding: 0.75em 1.5em;
 }
 
 blockquote *:last-child,
@@ -192,7 +208,7 @@ ol,
 ul,
 dl,
 .math-display {
-  line-height: 1.5;
+  line-height: 1.8;
   margin-bottom: 1em;
 }
 
@@ -212,7 +228,7 @@ li {
   & > ul,
   & > ol {
     margin-bottom: 0;
-    margin-left: 1em;
+    margin-left: 2em;
   }
 }
 
@@ -220,13 +236,46 @@ ol,
 ul {
   list-style-position: outside;
   margin-left: 1em;
+
+  > li {
+    margin: 0.5em 0;
+
+    &:last-child {
+      margin-bottom: 1em;
+    }
+  }
 }
 
 hr {
+  display: block;
+  position: relative;
+  width: 6px;
+  height: 10px;
+  margin: 45px auto;
   border: 0;
-  border-top: 1px solid $border-color;
-  border-bottom: 1px solid #fff;
-  margin: 1em 0;
+  background: #6b69fa;
+
+  &:before,
+  &:after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+    width: 6px;
+    height: 6px;
+    margin-top: -3px;
+    border: 0;
+    background: #6b69fa;
+    content: '';
+  }
+
+  &:before {
+    left: 11px;
+  }
+
+  &:after {
+    right: 11px;
+  }
 }
 
 a {
@@ -238,10 +287,11 @@ kbd {
   background-color: #eee;
   border-radius: 3px;
   border: 1px solid #b4b4b4;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2),
+    0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
   color: #333;
   display: inline-block;
-  font-size: .85em;
+  font-size: 0.85em;
   font-weight: 700;
   line-height: 1;
   padding: 2px 4px;

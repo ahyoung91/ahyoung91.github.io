@@ -1,0 +1,22 @@
+I"�<p><img src="/assets/img/portfolio/storyjam.png" alt="image" /></p>
+
+<p>만화가족의 웹툰 플랫폼</p>
+
+<p>TweenMax를 사용하여 애니메이션 작업을 하였고, 메일링 코딩, 회원가입 페이지 등 웹접근성을 고려해 마크업 하였습니다.</p>
+
+<hr />
+
+<ul>
+  <li><a href="https://www.storyjam.co.kr/" target="\_blank"><strong>URL</strong></a></li>
+  <li>프로젝트 기간 : 2020/05 ~ 진행중</li>
+  <li>프로젝트 유형 : 유지보수</li>
+  <li>크로스브라우징
+    <ul>
+      <li>PC : 크롬, 엣지</li>
+      <li>MOBILE : 안드로이드, ios 최신</li>
+    </ul>
+  </li>
+  <li>기여도 : 100%</li>
+  <li>사용 언어 : HTML5, CSS3, javaScript</li>
+</ul>
+:ET

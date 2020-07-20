@@ -1,0 +1,23 @@
+I"B<p><img src="/assets/img/portfolio/storyjam.png" alt="image" /></p>
+
+<p>스토리잼은 웹툰, 소설 등</p>
+
+<p>모바일 웹을 주로 작업했고, 리액트 환경에서 마크업하였습니다.
+이벤트 페이지에서는 CSS3의 애니메이션을 주로 이용하여 작업하였고 그 외 사이트 유지보수에서는 웹 접근성을 고려하여 마크업 하였습니다.</p>
+
+<hr />
+
+<ul>
+  <li><a href="https://www.storyjam.co.kr/" target="\_blank"><strong>URL</strong></a></li>
+  <li>프로젝트 기간 : 2020/05 ~ 진행중</li>
+  <li>프로젝트 유형 : 개편, 유지보수</li>
+  <li>크로스브라우징
+    <ul>
+      <li>PC : 크롬, 엣지</li>
+      <li>MOBILE : 안드로이드, ios 최신</li>
+    </ul>
+  </li>
+  <li>기여도 : 100%</li>
+  <li>사용 언어 : HTML5, CSS3, javaScript</li>
+</ul>
+:ET

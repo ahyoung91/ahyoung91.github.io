@@ -1,0 +1,71 @@
+I"�<p><a href="https://jekyllrb-ko.github.io/" target="_blank"><strong>Jelyll</strong></a>은 markdown으로 작성된 문서를 HTML로 변환하여 웹사이트를 구축할 수 있도록 돕는 Static Website generator로 Ruby로 작성되어 있다. HTML/CSS등의 정적파일만으로 사이트를 생성하므로 매우 빠르고 가벼우며 무료이다.</p>
+
+<h2 id="설치과정">설치과정</h2>
+
+<h3 id="1-github에-새로운-repository-만들기">1. github에 새로운 repository 만들기</h3>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/pexels/posts/jekyll_img1.png" alt="jekyll_img1.png" />
+    </div>
+    
+</div>
+
+<p>Github에서 새로운 저장소를 만든다. 이 때 저장소의 이름을 자신의 이름 뒤에 .github.io가 붙은 이름으로 짓는다.
+이렇게 해야 yourname.github.io의 도메인으로 접속할 수 있는 블로그가 된다.</p>
+
+<h3 id="2-환경세팅">2. 환경세팅</h3>
+<p>아래 설명은 윈도우 환경에서 설치한 내용이다.
+우선 <a href="https://rubyinstaller.org/downloads/" target="_blank"><strong>Ruby</strong></a>를 설치한다.<br />
+설치가 완료되면 윈도우 메뉴에서 Start Command Promt with Ruby 를 검색하면 다음과 같이 나타난다.</p>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/pexels/posts/jekyll_img2.png" alt="jekyll_img2.png" />
+    </div>
+    
+</div>
+
+<p>해당 커맨드에서</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js">    <span class="nx">gem</span> <span class="nx">install</span> <span class="nx">jekyll</span></code></pre></figure>
+
+<p>을 입력해주면 설치가 진행된다.</p>
+
+<p>설치 이후 바로</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js">    <span class="nx">jekyll</span> <span class="k">new</span> <span class="p">.</span></code></pre></figure>
+
+<p>를 실행하면 정상적으로 동작하지 않는다. 이유는 의존성을 갖는 패키지들의 설치가 필요하기 때문인데 오류를 보고 구글링하여 설치해도 되지만 필요한 파일을 미리 설치한다면 시간이 절약되므로 아래 패키지들을 미리 설치해준다.</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js">    <span class="nx">gem</span> <span class="nx">install</span> <span class="nx">bundler</span> 
+
+    <span class="nx">gem</span> <span class="nx">install</span> <span class="nx">minima</span> 
+
+    <span class="nx">gem</span> <span class="nx">install</span> <span class="nx">jekyll</span><span class="o">-</span><span class="nx">feed</span> 
+
+    <span class="nx">gem</span> <span class="nx">install</span> <span class="nx">tzinfo</span><span class="o">-</span><span class="nx">data</span></code></pre></figure>
+
+<p>설치가 끝나면</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js">    <span class="nx">jekyll</span> <span class="k">new</span> <span class="p">.</span></code></pre></figure>
+
+<p>를 다시 실행해보자.</p>
+
+<p>정상적으로 설치가 완료됐다면 jekyll serve를 실행해보자.
+jekyll 가 내장하고 있는 서버가 동작하고 로컬PC에서도 생성된 사이트를 확인할 수 있다.
+로컬에서 확인하기 위해서는 브라우저에서 http://localhost:4000 으로 접속해보자.
+아래 화면이 나왔다면 설치에 성공한것이다.</p>
+
+<div class="row">
+    
+    <div style="flex: 100.0%">
+        <img class="single" src="/assets/img/pexels/posts/jekyll_img3.png" alt="jekyll_img3.png" />
+    </div>
+    
+</div>
+
+<p>여기까지 설치과정에 대해 알아봤고, 다음 포스팅 때엔 jekyll 폴더구조 및 테마 적용에 대해 알아보겠다.</p>
+:ET

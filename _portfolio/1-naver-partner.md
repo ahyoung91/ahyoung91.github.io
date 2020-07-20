@@ -15,7 +15,7 @@ img: "assets/img/portfolio/thumb_talkpartner.jpg"
 
 - [**URL**](https://partner.talk.naver.com){:target="_blank"}
 - 프로젝트 기간 : 2018/06 ~ 2019/06
-- 프로젝트 유형 : 유지보수
+- 프로젝트 유형 : 개편, 유지보수
 - 크로스브라우징
   - PC : 익스(^8), 크롬, 엣지, 사파리, 파이어폭스, 오페라
   - MOBILE : android ^4.4.2, ios 최신

@@ -3,6 +3,7 @@
   position: relative;
   margin: 0 auto;
   max-width: 400px;
+  border: 1px solid #ddd;
 
   .caption {
     margin: 0;
@@ -11,9 +12,9 @@
     height: 100%;
     text-align: center;
     opacity: 0;
-    -webkit-transition: all ease .5s;
-    -moz-transition: all ease .5s;
-    transition: all ease .5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    transition: all ease 0.5s;
 
     &::before {
       content: ' ';
@@ -47,8 +48,20 @@
 .portfolio-grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  padding: 50px;
+  justify-content: space-between;
 
+  img {
+    width: 100%;
+  }
+
+  @media screen and (max-width: $break) {
+    padding: 0;
+  }
+
+  @media screen and (max-width: $sm-break) {
+    padding: 0;
+  }
 }
 
 .portfolio-cell {
@@ -56,10 +69,13 @@
   margin-bottom: 10px;
 
   @media screen and (max-width: $break) {
-    flex-basis: 50%;
+    flex-basis: 48%;
+    padding: 0;
+    margin-bottom: 30px;
   }
 
   @media screen and (max-width: $sm-break) {
-    flex-basis: 100%
+    flex-basis: 100%;
+    padding: 0;
   }
 }
